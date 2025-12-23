@@ -1,0 +1,22 @@
+{
+  "contact": {
+    "email": "hello@anutech.com",
+    "phone": "+1 (555) 123-4567",
+    "address": "123 Tech Park, Silicon Valley, CA",
+    "items": [
+      {
+        "icon": "envelope",
+        "text": "hello@anutech.com"
+      },
+      {
+        "icon": "phone",
+        "text": "+1 (555) 123-4567"
+      },
+      {
+        "icon": "location-dot",
+        "text": "123 Tech Park, Silicon Valley, CA"
+      }
+    ]
+  }
+}
+

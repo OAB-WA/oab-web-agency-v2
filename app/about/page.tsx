@@ -1,31 +1,28 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import Hero from "@/components/sections/Hero";
-import Partners from "@/components/sections/Partners";
+import PageHero from "@/components/ui/PageHero";
 import Features from "@/components/sections/Features";
-import Services from "@/components/sections/Services";
 import Stats from "@/components/sections/Stats";
-import Testimonials from "@/components/sections/Testimonials";
 import CTA from "@/components/sections/CTA";
 import { getBreadcrumbSchema } from "@/lib/seo/structured-data";
 import siteConfig from "@/lib/data/site-config.json";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "About Us",
   description:
-    "Innovative IT Solutions for Visionaries. We deliver high-performance software, custom web development, and strategic technology consulting to scale your business.",
+    "Learn about AnuTech's mission, capabilities, and how we transform complex challenges into actionable results through advanced methodologies.",
   openGraph: {
-    title: "AnuTech - IT Solutions & Technology Agency",
+    title: "About Us | AnuTech",
     description:
-      "Innovative IT Solutions for Visionaries. We deliver high-performance software, custom web development, and strategic technology consulting.",
-    url: siteConfig.site.url,
+      "Learn about AnuTech's mission, capabilities, and how we transform complex challenges into actionable results.",
   },
 };
 
-export default function Home() {
+export default function About() {
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: "Home", url: siteConfig.site.url },
+    { name: "About", url: `${siteConfig.site.url}/about` },
   ]);
 
   return (
@@ -36,15 +33,17 @@ export default function Home() {
       />
       <Navbar />
       <main>
-        <Hero />
-        <Partners />
-        <Features showHeader={true} />
-        <Services showHeader={true} />
+        <PageHero
+          badge={{ icon: "shield-halved", text: "AGENCY CAPABILITIES" }}
+          title="Explore the Power of AnuTech Solutions"
+          description="Discover how AnuTech transforms complex challenges into actionable results. Our advanced methodologies are designed to optimize business workflows."
+        />
+        <Features showHeader={false} />
         <Stats />
-        <Testimonials />
         <CTA />
       </main>
       <Footer />
     </>
   );
 }
+

@@ -1,0 +1,13 @@
+{
+  "partners": [
+    { "name": "Amazon", "icon": "aws" },
+    { "name": "Google", "icon": "google" },
+    { "name": "Stripe", "icon": "stripe" },
+    { "name": "Spotify", "icon": "spotify" },
+    { "name": "Slack", "icon": "slack" },
+    { "name": "Airbnb", "icon": "airbnb" },
+    { "name": "Microsoft", "icon": "microsoft" },
+    { "name": "Figma", "icon": "figma" }
+  ]
+}
+

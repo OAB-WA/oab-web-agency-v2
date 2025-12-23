@@ -1,26 +1,154 @@
-@import "tailwindcss";
+/* Global Styles - Converted from SCSS */
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Color Palette */
+  --bg-dark: #1b1b21;
+  --bg-white: #ffffff;
+  --bg-card-box: #F5F7FA;
+  --bg-card: rgba(94, 35, 9, 0.25);
+  --primary-glow: #FF6B00;
+  --text-main: #ffffff;
+  --text-muted: #53535c;
+  --text-dark: #1b1b21;
+  --text-white: #ffffff;
+
+  /* Typography */
+  --font-heading: var(--font-poppins), "Poppins", sans-serif;
+  --font-body: var(--font-inter), "Inter", sans-serif;
+
+  /* Spacing & Radius */
+  --glass-border: 1px solid rgba(255, 176, 136, 0.15);
+  --radius-xl: 16px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Global Resets */
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-white);
+  color: var(--text-dark);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 400;
+  font-family: var(--font-heading);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.an-mb-15 {
+  margin-bottom: 15px;
+}
+
+/* Container */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+/* Buttons */
+.button {
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.3s ease;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #FF6B00;
+  color: #ffffff;
+  padding: 12px 25px !important;
+  font-size: 0.875rem;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  background: #FF6B00;
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(255, 107, 0, 0.47);
+}
+
+.btn-glass {
+  background: var(--bg-dark);
+  color: var(--text-main);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.btn-glass:hover {
+  transform: translateY(-2px);
+  background: #000000;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Logo Premium Styles */
+.logo-premium {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.logo-premium:hover {
+  opacity: 0.9;
+}
+
+.logo-premium svg {
+  filter: drop-shadow(0 0 10px rgba(255, 176, 136, 0.4));
+}
+
+.logo-premium .brand-name {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-dark);
+  letter-spacing: -0.03em;
+}
+
+.logo-premium .text-white {
+  color: var(--text-white) !important;
+}
+
+.logo-premium .font-bold {
+  font-weight: 600;
+}
+
+.logo-premium .brand-highlight {
+  font-weight: 400;
+  color: #FF6B00;
 }

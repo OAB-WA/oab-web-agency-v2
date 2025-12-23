@@ -1,0 +1,36 @@
+.notFound {
+  background: #000;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+
+  .container {
+    max-width: 600px;
+    padding: 20px;
+  }
+
+  .errorCode {
+    font-size: 8rem;
+    margin-bottom: 0;
+    font-family: var(--font-heading);
+    color: #FF6B00;
+    line-height: 1;
+  }
+
+  .errorTitle {
+    color: #fff;
+    font-family: var(--font-heading);
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+
+  .errorMessage {
+    color: #888;
+    margin-bottom: 30px;
+    font-size: 1rem;
+  }
+}
+

@@ -1,31 +1,28 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import Hero from "@/components/sections/Hero";
-import Partners from "@/components/sections/Partners";
-import Features from "@/components/sections/Features";
+import PageHero from "@/components/ui/PageHero";
 import Services from "@/components/sections/Services";
 import Stats from "@/components/sections/Stats";
-import Testimonials from "@/components/sections/Testimonials";
 import CTA from "@/components/sections/CTA";
 import { getBreadcrumbSchema } from "@/lib/seo/structured-data";
 import siteConfig from "@/lib/data/site-config.json";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "Services",
   description:
-    "Innovative IT Solutions for Visionaries. We deliver high-performance software, custom web development, and strategic technology consulting to scale your business.",
+    "End-to-End Technology Solutions. From initial concept to final deployment, we provide a full spectrum of IT services tailored to scale your business infrastructure.",
   openGraph: {
-    title: "AnuTech - IT Solutions & Technology Agency",
+    title: "Services | AnuTech",
     description:
-      "Innovative IT Solutions for Visionaries. We deliver high-performance software, custom web development, and strategic technology consulting.",
-    url: siteConfig.site.url,
+      "End-to-End Technology Solutions. From initial concept to final deployment, we provide a full spectrum of IT services.",
   },
 };
 
-export default function Home() {
+export default function ServicesPage() {
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: "Home", url: siteConfig.site.url },
+    { name: "Services", url: `${siteConfig.site.url}/services` },
   ]);
 
   return (
@@ -36,15 +33,17 @@ export default function Home() {
       />
       <Navbar />
       <main>
-        <Hero />
-        <Partners />
-        <Features showHeader={true} />
-        <Services showHeader={true} />
+        <PageHero
+          badge={{ icon: "gear", text: "Our Expertise" }}
+          title="End-to-End Technology Solutions"
+          description="From initial concept to final deployment, we provide a full spectrum of IT services tailored to scale your business infrastructure."
+        />
+        <Services showHeader={false} />
         <Stats />
-        <Testimonials />
         <CTA />
       </main>
       <Footer />
     </>
   );
 }
+

@@ -1,0 +1,20 @@
+{
+  "site": {
+    "name": "AnuTech",
+    "tagline": "IT Solutions & Technology Agency",
+    "description": "AnuTech is a premium IT Solutions, Software Agencies, and Digital Transformation consultancies. We deliver high-performance software, custom web development, and strategic technology consulting.",
+    "url": "https://anutech.com",
+    "social": {
+      "twitter": "@anutech",
+      "linkedin": "anutech",
+      "github": "anutech",
+      "discord": "anutech"
+    },
+    "company": {
+      "name": "AnuTech Agency",
+      "founded": "2020",
+      "location": "Silicon Valley, CA"
+    }
+  }
+}
+

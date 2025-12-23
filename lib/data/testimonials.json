@@ -1,0 +1,57 @@
+{
+  "testimonials": {
+    "row1": [
+      {
+        "name": "Chloe Bennett",
+        "role": "Product Manager",
+        "image": "/images/avatar1.jpg",
+        "text": "This tool reduced status meetings and keeps us focused on key goals. Highly recommended!"
+      },
+      {
+        "name": "Liam Thompson",
+        "role": "Tech Lead",
+        "image": "/images/avatar3.jpg",
+        "text": "We've tried many platforms — this is the first that adapts to how we actually work."
+      },
+      {
+        "name": "Ava Cooper",
+        "role": "Customer Success",
+        "image": "/images/avatar4.jpg",
+        "text": "We're hitting deadlines faster than ever, with fewer surprises and more clarity."
+      },
+      {
+        "name": "Mason Rivera",
+        "role": "Scrum Master",
+        "image": "/images/avatar2.jpg",
+        "text": "Real-time edits and AI suggestions make our sprint planning incredibly smooth."
+      }
+    ],
+    "row2": [
+      {
+        "name": "Dylan Carter",
+        "role": "Operations Lead",
+        "image": "/images/avatar2.jpg",
+        "text": "Assigning and tracking tasks is now seamless. Our workflow feels 10x faster."
+      },
+      {
+        "name": "Emily Parker",
+        "role": "Project Coordinator",
+        "image": "/images/avatar3.jpg",
+        "text": "I can finally see what everyone's working on without constantly checking in."
+      },
+      {
+        "name": "James Wilson",
+        "role": "DevOps Engineer",
+        "image": "/images/avatar1.jpg",
+        "text": "The security features and uptime guarantee are exactly what our enterprise clients needed."
+      },
+      {
+        "name": "Sophie Moore",
+        "role": "Designer",
+        "image": "/images/avatar4.jpg",
+        "text": "The interface is stunning. It bridges the gap between design and development perfectly."
+      }
+    ]
+  }
+}
+

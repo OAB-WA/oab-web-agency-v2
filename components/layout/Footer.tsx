@@ -1,0 +1,89 @@
+import Link from "next/link";
+import Logo from "../ui/Logo";
+import Icon from "../ui/Icon";
+import styles from "./Footer.module.scss";
+
+export default function Footer() {
+  return (
+    <footer className={styles.footer}>
+      <div className={styles.footerCard}>
+        <div className={styles.footerLinks}>
+          <div className={styles.col}>
+            <h4>
+              <Logo variant="light" />
+            </h4>
+            <p>
+              Our diverse team of engineers, designers, and strategists is united
+              by a single mission: to build technology that drives your business
+              forward.
+            </p>
+          </div>
+          <div className={styles.footerLinksA}>
+            <div className={styles.col}>
+              <h4>Services</h4>
+              <ul>
+                <li>
+                  <Link href="/services">Web Development</Link>
+                </li>
+                <li>
+                  <Link href="/services">App Development</Link>
+                </li>
+                <li>
+                  <Link href="/services">Career</Link>
+                  <span className={styles.badgeGray}>We're hiring!</span>
+                </li>
+                <li>
+                  <Link href="/services">Consulting</Link>
+                </li>
+              </ul>
+            </div>
+            <div className={styles.col}>
+              <h4>Trust and Legal</h4>
+              <ul>
+                <li>
+                  <Link href="#">Terms and Conditions</Link>
+                </li>
+                <li>
+                  <Link href="#">Privacy Policy</Link>
+                </li>
+                <li>
+                  <Link href="#">Security</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.footerDivider}></div>
+
+        <div className={styles.footerBottom}>
+          <div className={styles.copyright}>
+            &copy; 2025 AnuTech Agency. All rights reserved.
+          </div>
+          <div className={styles.socialIcons}>
+            <a href="#" aria-label="Twitter">
+              <Icon name="x-twitter" size={20} />
+            </a>
+            <a href="#" aria-label="Discord">
+              <Icon name="discord" size={20} />
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <Icon name="linkedin" size={20} />
+            </a>
+            <a href="#" aria-label="GitHub">
+              <Icon name="github" size={20} />
+            </a>
+
+            <div className={styles.langRight}>
+              <button className={styles.btnLang}>
+                <Icon name="globe" size={16} /> English
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+

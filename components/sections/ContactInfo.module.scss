@@ -1,0 +1,59 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.contactInfo {
+  h1 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: var(--text-dark);
+    line-height: 1.2;
+  }
+
+  p {
+    color: var(--text-muted);
+    font-size: 1rem; // $an-body
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+
+  .infoItems {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 1.1rem;
+      color: var(--text-dark);
+      font-weight: 500;
+
+      svg,
+      i {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        color: #FF6B00; // $primary-glow
+        font-size: 1.2rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease;
+      }
+
+      &:hover svg,
+      &:hover i {
+        transform: translateY(-3px);
+        background: #FF6B00;
+        color: #fff;
+        border-color: #FF6B00;
+      }
+    }
+  }
+}
+

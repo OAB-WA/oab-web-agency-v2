@@ -1,0 +1,31 @@
+/* src/scss/style.scss */
+
+/* 1. Config */
+@import 'variables';
+@import 'mixins';
+
+/* 2. Global Resets */
+html{
+  scroll-behavior: smooth;
+}
+* { margin: 0; padding: 0; box-sizing: border-box;}
+body {
+  background-color: var(--bg-white);
+  color: var(--text-dark);
+  font-family: 'Inter', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+.an-mb-15 { 
+  margin-bottom: 15px;
+}
+
+ 
+/* 3. Layout */
+@import 'layout';

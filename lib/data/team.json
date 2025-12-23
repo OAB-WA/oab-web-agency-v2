@@ -1,0 +1,50 @@
+{
+  "team": [
+    {
+      "id": "vikram",
+      "name": "Vikram Anu",
+      "role": "Founder & CEO",
+      "description": "Visionary leader with 15+ years in Enterprise Architecture and AI integration.",
+      "image": "/images/avatar2.jpg",
+      "social": [
+        { "name": "linkedin-in", "label": "LinkedIn", "url": "#" },
+        { "name": "x-twitter", "label": "Twitter", "url": "#" }
+      ],
+      "isLeader": true
+    },
+    {
+      "id": "sarah",
+      "name": "Sarah Jenkins",
+      "role": "CTO",
+      "description": "Ex-Google engineer specializing in scalable cloud infrastructure and security.",
+      "image": "/images/avatar1.jpg",
+      "social": [
+        { "name": "linkedin-in", "label": "LinkedIn", "url": "#" },
+        { "name": "github", "label": "GitHub", "url": "#" }
+      ]
+    },
+    {
+      "id": "david",
+      "name": "David Ross",
+      "role": "Product Design",
+      "description": "Award-winning UX researcher focused on intuitive human-computer interaction.",
+      "image": "/images/avatar3.jpg",
+      "social": [
+        { "name": "dribbble", "label": "Dribbble", "url": "#" },
+        { "name": "linkedin-in", "label": "LinkedIn", "url": "#" }
+      ]
+    },
+    {
+      "id": "priya",
+      "name": "Priya Sharma",
+      "role": "Lead Developer",
+      "description": "Full-stack wizard. Expert in React, Node.js, and complex API integrations.",
+      "image": "/images/avatar4.jpg",
+      "social": [
+        { "name": "github", "label": "GitHub", "url": "#" },
+        { "name": "stack-overflow", "label": "StackOverflow", "url": "#" }
+      ]
+    }
+  ]
+}
+

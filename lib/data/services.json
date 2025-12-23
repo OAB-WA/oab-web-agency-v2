@@ -1,0 +1,49 @@
+{
+  "services": [
+    {
+      "id": "web-dev",
+      "icon": "laptop-code",
+      "title": "Custom Web Development",
+      "description": "We build production-ready applications using React, Vue, and Angular. From wireframes to High-Fidelity interactive platforms.",
+      "feature": "Fast Deployment"
+    },
+    {
+      "id": "mobile",
+      "icon": "mobile-screen-button",
+      "title": "Mobile App Solutions",
+      "description": "Engage your customers anywhere with native and cross-platform mobile applications. We prioritize user experience, fluid animations, and offline capabilities.",
+      "feature": "iOS & Android (Flutter/React Native)"
+    },
+    {
+      "id": "cloud",
+      "icon": "cloud-arrow-up",
+      "title": "Cloud & DevOps Engineering",
+      "description": "Optimize your infrastructure costs and security. We manage cloud migrations and set up automated CI/CD pipelines for faster, safer releases.",
+      "feature": "AWS / Azure / Google Cloud"
+    },
+    {
+      "id": "design",
+      "icon": "pen-nib",
+      "title": "Product Design (UI/UX)",
+      "description": "We transform complex requirements into intuitive, beautiful interfaces. Our design process ensures your product is not just functional, but delightful to use.",
+      "feature": "Wireframing & Prototyping"
+    },
+    {
+      "id": "ai",
+      "icon": "brain",
+      "title": "AI & Business Automation",
+      "description": "Leverage the power of Artificial Intelligence to automate repetitive tasks and gain predictive insights from your data.",
+      "feature": "Custom Chatbots & NLP",
+      "hasButton": true
+    },
+    {
+      "id": "consulting",
+      "icon": "chess",
+      "title": "Strategic IT Consulting",
+      "description": "Not sure which tech stack to choose? Our consultants provide roadmap planning to align technology with your business goals.",
+      "feature": "Digital Transformation Strategy",
+      "hasButton": true
+    }
+  ]
+}
+

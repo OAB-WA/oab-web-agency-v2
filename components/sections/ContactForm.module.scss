@@ -1,0 +1,74 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.contactFormCard {
+  background: var(--bg-white);
+  padding: 50px;
+  border-radius: 24px; // $radius-xl
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+
+  @media (max-width: 768px) {
+    padding: 30px;
+  }
+
+  .formGroup {
+    margin-bottom: 25px;
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      background: #fcfcfc;
+
+      &:focus {
+        border-color: #FF6B00; // $primary-glow
+        outline: none;
+        background: #fff;
+        box-shadow: 0 0 0 4px rgba(255, 107, 0, 0.1);
+      }
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+  }
+
+  .submitButton {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .successMessage {
+    background: #d1fae5;
+    color: #065f46;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+  }
+
+  .errorMessage {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+  }
+}
+

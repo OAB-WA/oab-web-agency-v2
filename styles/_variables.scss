@@ -1,0 +1,58 @@
+// ==========================
+// FONT SIZES (Scss Variables)
+// ==========================
+$an-hero-xl: 4rem;     // 64px
+$an-hero: 3rem;        // 48px
+$an-h2: 2.5rem;        // 40px
+$an-h3: 1.75rem;       // 28px
+$an-body-lg: 1.125rem; // 18px
+$an-body: 1rem;        // 16px
+$an-small: .875rem;    // 14px
+$an-tiny: .75rem;      // 12px
+
+$tablet-break: 1024px;
+$mobile-break: 768px;
+
+// =========================================
+// 🎨 COLOR THEME
+// =========================================
+
+$bg-black: #000000;
+$bg-white: #ffffff;
+$bg-dark: #121212;
+$bg-card: #1a1a1a;
+$text-main: #ffffff;
+$border-color: rgba(255, 255, 255, 0.1);
+$text-muted: #a1a1a1; 
+$primary-glow: #FF6B00;  
+$secondary-glow: #002366;  
+$primary-button: #FF6B00;
+$primary-button-text: #ffffff;
+$font-heading: "Poppins", sans-serif; 
+$font-body: "Inter", sans-serif; 
+$text-dark: #1b1b21;
+$radius-xl: 24px;
+$max-width: 1400px;
+
+:root {
+  /* -- Color Palette -- */
+  --bg-dark:  #1b1b21;
+  --bg-white: #ffffff;
+  --bg-card-box:  #F5F7FA;
+  --bg-card: rgba(94, 35, 9, 0.25);
+  --primary-glow: #FF6B00;   
+  --text-main: #ffffff;
+  --text-muted: #53535c;
+  --text-dark: #1b1b21;
+  --text-white: #ffffff;
+
+  /* Typography */
+  --font-heading: "Poppins", sans-serif; 
+  --font-body: "Inter", sans-serif;  
+  
+  /* -- Spacing & Radius -- */
+  --glass-border: 1px solid rgba(255, 176, 136, 0.15);
+  --radius-xl: 16px;
+  
+}
+ 

@@ -1,0 +1,178 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.developersSection {
+  padding: 100px 0;
+  background-color: var(--bg-white);
+  color: var(--text-dark);
+
+  .container {
+    max-width: 1400px; // $max-width
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .devHeader {
+    max-width: 500px;
+    position: relative;
+    display: block;
+    margin: 0 auto 50px auto;
+    text-align: center;
+
+    .label {
+      font-size: 0.7rem;
+      padding: 5px 10px;
+      border-radius: 20px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      color: #FF6B00; // $primary-glow
+      border: 1px solid rgba(255, 107, 0, 0.3);
+      background: rgba(255, 107, 0, 0.1);
+      letter-spacing: 1px;
+      display: inline-block;
+    }
+
+    h2 {
+      font-family: var(--font-heading);
+      font-size: 2.5rem; // $an-h2
+      font-weight: 400;
+      line-height: 1.2;
+      display: block;
+      width: 100%;
+      max-width: 800px;
+      margin-bottom: 15px;
+
+      @media (max-width: 768px) {
+        font-size: 1.75rem; // $an-h3
+        line-height: 1.3;
+        padding-right: 5%;
+      }
+    }
+
+    .desc {
+      font-size: 0.875rem; // $an-small
+      color: #53535c;
+      max-width: 600px;
+      line-height: 1.5;
+      margin: 0;
+    }
+  }
+
+  .bentoGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: var(--bg-card-box);
+    padding: 10px;
+    border-radius: 16px;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .devCard {
+    background: var(--bg-white);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      border-color: rgba(255, 107, 0, 0.3);
+    }
+
+    .iconWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FF6B00;
+      width: 45px;
+      height: 45px;
+      background: linear-gradient(45deg, #fff2ed, #ffffff);
+      flex-shrink: 0;
+      border: 1px solid #ffe6d4;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+      font-weight: 400;
+    }
+
+    .desc {
+      color: var(--text-muted);
+      font-size: 0.875rem; // $an-small
+      line-height: 1.5;
+      margin-bottom: 25px;
+    }
+
+    .modelList {
+      display: block;
+      gap: 8px;
+      margin-top: auto;
+      position: relative;
+
+      .modelItem {
+        display: inline-block;
+        border: 1px solid #eaedf1;
+        position: relative;
+        padding: 10px 15px;
+        border-radius: 8px;
+
+        h4 {
+          font-size: 0.875rem; // $an-small
+          font-weight: 400;
+          margin-bottom: 0px;
+        }
+      }
+    }
+
+    &.cardAgents {
+      flex-direction: row;
+      gap: 40px;
+      overflow: hidden;
+      position: relative;
+
+      @media (max-width: 768px) {
+        flex-direction: column-reverse;
+      }
+
+      .contentSide {
+        flex: 1;
+        z-index: 2;
+      }
+    }
+
+    &.cardScale {
+      .btnWhite {
+        margin-top: 15px;
+        background: #fff;
+        color: #000;
+        border: none;
+        padding: 12px 0px;
+        border-radius: 30px;
+        font-weight: 700;
+        font-size: 0.8rem;
+        cursor: pointer;
+        width: max-content;
+        align-self: flex-end;
+        transition: transform 0.2s;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+
+        &:hover {
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+}
+
