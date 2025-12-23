@@ -2,54 +2,62 @@
   "testimonials": {
     "row1": [
       {
-        "name": "Chloe Bennett",
-        "role": "Product Manager",
+        "name": "Mike Johnson",
+        "role": "Owner, Johnson Plumbing",
+        "location": "Austin, TX",
         "image": "/images/avatar1.jpg",
-        "text": "This tool reduced status meetings and keeps us focused on key goals. Highly recommended!"
+        "text": "Our website went from getting 2-3 leads per month to 15-20 leads per month. The booking system alone has saved us 10 hours per week. Best investment we've made."
       },
       {
-        "name": "Liam Thompson",
-        "role": "Tech Lead",
+        "name": "Sarah Martinez",
+        "role": "Owner, Martinez Legal Services",
+        "location": "Phoenix, AZ",
         "image": "/images/avatar3.jpg",
-        "text": "We've tried many platforms — this is the first that adapts to how we actually work."
+        "text": "Working with OAB was seamless despite being remote. Our leads tripled in 2 months, and the team was always responsive during USA business hours. Highly recommend!"
       },
       {
-        "name": "Ava Cooper",
-        "role": "Customer Success",
+        "name": "David Chen",
+        "role": "Owner, Chen HVAC Services",
+        "location": "Orlando, FL",
         "image": "/images/avatar4.jpg",
-        "text": "We're hitting deadlines faster than ever, with fewer surprises and more clarity."
+        "text": "The mobile-first design means we're getting leads even when customers are on the go. Our conversion rate increased by 250% in the first quarter."
       },
       {
-        "name": "Mason Rivera",
-        "role": "Scrum Master",
+        "name": "Jennifer Williams",
+        "role": "Owner, Williams Fitness Studio",
+        "location": "Denver, CO",
         "image": "/images/avatar2.jpg",
-        "text": "Real-time edits and AI suggestions make our sprint planning incredibly smooth."
+        "text": "The online booking system integrated perfectly with our schedule. We're now booking 40% more sessions, and I love how easy it is to manage everything."
       }
     ],
     "row2": [
       {
-        "name": "Dylan Carter",
-        "role": "Operations Lead",
+        "name": "Robert Taylor",
+        "role": "Owner, Taylor Electric",
+        "location": "Portland, OR",
         "image": "/images/avatar2.jpg",
-        "text": "Assigning and tracking tasks is now seamless. Our workflow feels 10x faster."
+        "text": "The local SEO work they did got us ranking on page 1 for 'electrician near me' in just 3 months. We're booked solid now."
       },
       {
-        "name": "Emily Parker",
-        "role": "Project Coordinator",
+        "name": "Lisa Anderson",
+        "role": "Owner, Anderson Dental Care",
+        "location": "Nashville, TN",
         "image": "/images/avatar3.jpg",
-        "text": "I can finally see what everyone's working on without constantly checking in."
+        "text": "Professional, fast, and results-driven. Our new website looks amazing and brings in consistent leads. The team understood exactly what we needed."
       },
       {
-        "name": "James Wilson",
-        "role": "DevOps Engineer",
+        "name": "Michael Brown",
+        "role": "Owner, Brown Landscaping",
+        "location": "Seattle, WA",
         "image": "/images/avatar1.jpg",
-        "text": "The security features and uptime guarantee are exactly what our enterprise clients needed."
+        "text": "Before OAB, we had a basic site that did nothing. Now we're getting 5-8 qualified leads per week. The ROI has been incredible."
       },
       {
-        "name": "Sophie Moore",
-        "role": "Designer",
+        "name": "Amanda Davis",
+        "role": "Owner, Davis Consulting",
+        "location": "Boston, MA",
         "image": "/images/avatar4.jpg",
-        "text": "The interface is stunning. It bridges the gap between design and development perfectly."
+        "text": "The conversion optimization they did increased our contact form submissions by 4x. The website pays for itself every month with new clients."
       }
     ]
   }

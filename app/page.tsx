@@ -14,11 +14,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Home",
   description:
-    "Innovative IT Solutions for Visionaries. We deliver high-performance software, custom web development, and strategic technology consulting to scale your business.",
+    "Websites that turn visitors into customers. We build high-converting websites for service businesses across the United States. Get more leads, more bookings, and more revenue.",
   openGraph: {
-    title: "AnuTech - IT Solutions & Technology Agency",
+    title: "OAB Web Agency - High-Converting Websites for Service Businesses",
     description:
-      "Innovative IT Solutions for Visionaries. We deliver high-performance software, custom web development, and strategic technology consulting.",
+      "Websites that turn visitors into customers. We build high-converting websites for service businesses across the United States.",
     url: siteConfig.site.url,
   },
 };

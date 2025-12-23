@@ -2,9 +2,13 @@
 @import '../../styles/_mixins.scss';
 
 .developersSection {
-  padding: 100px 0;
+  padding: 120px 0;
   background-color: var(--bg-white);
   color: var(--text-dark);
+  
+  @media (max-width: 1024px) {
+    padding: 60px 0;
+  }
 
   .container {
     max-width: 1400px; // $max-width

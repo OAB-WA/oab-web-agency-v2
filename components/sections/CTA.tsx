@@ -6,14 +6,14 @@ export default function CTA() {
     <section className={styles.ctaSection}>
       <div className={styles.ctaContainer}>
         <div className={styles.ctaContent}>
-          <h2>Ready to Transform Your Business?</h2>
-          <p>Join 500+ companies scaling with AnuTech's digital solutions.</p>
+          <h2>Ready to Get More Leads?</h2>
+          <p>Join 150+ service businesses growing with OAB Web Agency. Get your free website audit today.</p>
           <div className={styles.ctaButtons}>
             <Link href="/contact" className="btn-primary button">
-              Schedule Consultation
+              Get Free Consultation
             </Link>
-            <Link href="/contact" className="btn-glass button">
-              View Pricing
+            <Link href="/portfolio" className="btn-glass button">
+              View Case Studies
             </Link>
           </div>
         </div>

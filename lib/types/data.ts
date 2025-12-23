@@ -36,6 +36,7 @@ export interface Testimonial {
   role: string;
   image: string;
   text: string;
+  location?: string;
 }
 
 export interface Stat {

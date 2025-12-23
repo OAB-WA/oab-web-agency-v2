@@ -1,20 +1,20 @@
 {
   "contact": {
-    "email": "hello@anutech.com",
-    "phone": "+1 (555) 123-4567",
-    "address": "123 Tech Park, Silicon Valley, CA",
+    "email": "hello@oabwebagency.com",
+    "phone": "Available via Email",
+    "address": "Remote-First Agency | Serving USA Service Businesses",
     "items": [
       {
         "icon": "envelope",
-        "text": "hello@anutech.com"
+        "text": "hello@oabwebagency.com"
       },
       {
         "icon": "phone",
-        "text": "+1 (555) 123-4567"
+        "text": "Response within 24 hours"
       },
       {
         "icon": "location-dot",
-        "text": "123 Tech Park, Silicon Valley, CA"
+        "text": "Serving service businesses across the United States"
       }
     ]
   }

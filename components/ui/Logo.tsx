@@ -43,9 +43,10 @@ export default function Logo({ className = "", variant = "dark" }: LogoProps) {
         </defs>
       </svg>
       <span className={`brand-name ${textColor} font-bold`}>
-        Anu<span className="brand-highlight" style={{ color: "#FF6B00" }}>
-          Tech
-        </span>
+        <span className="brand-highlight" style={{ color: "#FF6B00" }}>
+          OAB
+        </span>{" "}
+        <span style={{ fontWeight: 400 }}>Web Agency</span>
       </span>
     </Link>
   );

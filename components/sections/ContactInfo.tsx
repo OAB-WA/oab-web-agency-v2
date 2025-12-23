@@ -10,7 +10,9 @@ export default function ContactInfo() {
       <div className={styles.infoItems}>
         {contactItems.map((item, idx) => (
           <div key={idx} className={styles.item}>
-            <Icon name={item.icon as any} size={20} />
+            <div className={styles.iconWrapper}>
+              <Icon name={item.icon as any} size={18} />
+            </div>
             <span>{item.text}</span>
           </div>
         ))}

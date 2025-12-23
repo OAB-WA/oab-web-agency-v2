@@ -14,12 +14,11 @@ export default function Stats() {
             <Icon name="shield-halved" size={14} /> Proof In The Numbers
           </div>
           <h2 className={styles.statsTitle}>
-            Built to scale, proven to perform.
+            Real Results for Service Businesses
           </h2>
           <p className={styles.statsDesc}>
-            Behind every number is a team achieving more — see how
-            high-performing code, speed, and client satisfaction come together
-            at AnuTech.
+            These numbers represent real growth for service businesses across the United States. 
+            We measure success by the leads and revenue we help generate, not just code quality.
           </p>
         </div>
 

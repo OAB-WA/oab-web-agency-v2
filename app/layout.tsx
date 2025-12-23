@@ -18,34 +18,39 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "AnuTech - IT Solutions & Technology Agency",
-    template: "%s | AnuTech",
+    default: "OAB Web Agency - High-Converting Websites for Service Businesses",
+    template: "%s | OAB Web Agency",
   },
   description:
-    "AnuTech is a premium IT Solutions, Software Agencies, and Digital Transformation consultancies. We deliver high-performance software, custom web development, and strategic technology consulting.",
+    "OAB Web Agency builds high-converting websites for service-based businesses across the United States. We specialize in lead generation, conversion optimization, and local SEO to help service businesses grow their online presence and revenue.",
   keywords: [
-    "IT Solutions",
-    "Software Agency",
-    "Web Development",
-    "Digital Transformation",
-    "Technology Consulting",
+    "service business website",
+    "high converting website",
+    "lead generation website",
+    "local SEO",
+    "conversion optimization",
+    "service business web design",
+    "plumber website",
+    "electrician website",
+    "lawyer website",
+    "USA service business",
   ],
-  authors: [{ name: "AnuTech" }],
-  creator: "AnuTech",
+  authors: [{ name: "OAB Web Agency" }],
+  creator: "OAB Web Agency",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://anutech.com",
-    siteName: "AnuTech",
-    title: "AnuTech - IT Solutions & Technology Agency",
+    url: "https://oabwebagency.com",
+    siteName: "OAB Web Agency",
+    title: "OAB Web Agency - High-Converting Websites for Service Businesses",
     description:
-      "Innovative IT Solutions for Visionaries. We deliver high-performance software, custom web development, and strategic technology consulting.",
+      "We build high-converting websites for service businesses across the United States. Get more leads, more bookings, and more revenue.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AnuTech - IT Solutions & Technology Agency",
+    title: "OAB Web Agency - High-Converting Websites for Service Businesses",
     description:
-      "Innovative IT Solutions for Visionaries. We deliver high-performance software, custom web development, and strategic technology consulting.",
+      "We build high-converting websites for service businesses across the United States. Get more leads, more bookings, and more revenue.",
   },
   robots: {
     index: true,

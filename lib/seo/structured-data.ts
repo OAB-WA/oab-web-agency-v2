@@ -14,9 +14,9 @@ export function getOrganizationSchema(): StructuredData {
     url: siteConfig.site.url,
     logo: `${siteConfig.site.url}/images/icons/favicon.png`,
     description: siteConfig.site.description,
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: siteConfig.site.company.location,
+    areaServed: {
+      "@type": "Country",
+      name: "United States",
     },
     sameAs: [
       `https://twitter.com/${siteConfig.site.social.twitter}`,
@@ -66,6 +66,10 @@ export function getServiceSchema(service: {
     provider: {
       "@type": "Organization",
       name: service.provider,
+    },
+    areaServed: {
+      "@type": "Country",
+      name: "United States",
     },
   };
 }

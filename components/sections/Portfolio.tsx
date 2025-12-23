@@ -7,10 +7,25 @@ import type { PortfolioProject } from "@/lib/types/data";
 
 const projects = portfolioData.projects as PortfolioProject[];
 
-export default function Portfolio() {
+interface PortfolioProps {
+  showHeader?: boolean;
+}
+
+export default function Portfolio({ showHeader = true }: PortfolioProps) {
   return (
     <section className={styles.portfolioSection}>
       <div className="container">
+        {showHeader && (
+          <div className={styles.devHeader}>
+            <span className={styles.label}>
+              <Icon name="file" size={14} /> Our Work
+            </span>
+            <h2>Digital Products that Scale.</h2>
+            <p className={styles.desc}>
+              Explore our recent case studies in FinTech, Healthcare, and E-commerce.
+            </p>
+          </div>
+        )}
         <div className={styles.portfolioGrid}>
           {projects.map((project) => (
             <Link key={project.id} href={project.url} className={styles.portfolioCard}>

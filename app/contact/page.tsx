@@ -1,9 +1,9 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import PageHero from "@/components/ui/PageHero";
 import ContactInfo from "@/components/sections/ContactInfo";
 import ContactForm from "@/components/sections/ContactForm";
 import Partners from "@/components/sections/Partners";
+import Icon from "@/components/ui/Icon";
 import { getBreadcrumbSchema } from "@/lib/seo/structured-data";
 import siteConfig from "@/lib/data/site-config.json";
 import styles from "./contact.module.scss";
@@ -12,11 +12,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Let's start a project together. Have an idea? We have the team to build it. Send us a message and we'll reply within 24 hours.",
+    "Get your free website audit and consultation. We respond within 24 hours with USA business hours availability. Let's discuss how we can help your service business get more leads.",
   openGraph: {
-    title: "Contact | AnuTech",
+    title: "Contact | OAB Web Agency",
     description:
-      "Let's start a project together. Have an idea? We have the team to build it.",
+      "Get your free website audit and consultation. We respond within 24 hours with USA business hours availability.",
   },
 };
 
@@ -34,11 +34,20 @@ export default function Contact() {
       />
       <Navbar />
       <main>
-        <PageHero
-          badge={{ icon: "envelope", text: "Get In Touch" }}
-          title="Let's start a project together."
-          description="Have an idea? We have the team to build it. Send us a message and we'll reply within 24 hours."
-        />
+        <section className={styles.contactHeader}>
+          <div className="container">
+            <div className={styles.headerContent}>
+              <span className={styles.label}>
+                <Icon name="envelope" size={14} /> Get In Touch
+              </span>
+              <h2>Get Your Free Website Audit</h2>
+              <p className={styles.desc}>
+                Ready to get more leads? Fill out the form below and we'll get back to you within 24 hours 
+                with USA business hours availability. Let's discuss how we can help your service business grow.
+              </p>
+            </div>
+          </div>
+        </section>
         <div className={styles.contactSection}>
           <div className="container">
             <div className={styles.contactWrapper}>

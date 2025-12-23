@@ -13,9 +13,8 @@ export default function Footer() {
               <Logo variant="light" />
             </h4>
             <p>
-              Our diverse team of engineers, designers, and strategists is united
-              by a single mission: to build technology that drives your business
-              forward.
+              We build high-converting websites for service businesses across the United States. 
+              Our focus is on helping you get more leads, more bookings, and more revenue.
             </p>
           </div>
           <div className={styles.footerLinksA}>
@@ -23,17 +22,19 @@ export default function Footer() {
               <h4>Services</h4>
               <ul>
                 <li>
-                  <Link href="/services">Web Development</Link>
+                  <Link href="/services">High-Converting Website Design</Link>
                 </li>
                 <li>
-                  <Link href="/services">App Development</Link>
+                  <Link href="/services">Lead Generation Systems</Link>
                 </li>
                 <li>
-                  <Link href="/services">Career</Link>
-                  <span className={styles.badgeGray}>We're hiring!</span>
+                  <Link href="/services">Local SEO Optimization</Link>
                 </li>
                 <li>
-                  <Link href="/services">Consulting</Link>
+                  <Link href="/services">Conversion Rate Optimization</Link>
+                </li>
+                <li>
+                  <Link href="/services">Website Maintenance</Link>
                 </li>
               </ul>
             </div>
@@ -58,7 +59,7 @@ export default function Footer() {
 
         <div className={styles.footerBottom}>
           <div className={styles.copyright}>
-            &copy; 2025 AnuTech Agency. All rights reserved.
+            &copy; 2025 OAB Web Agency. All rights reserved. Serving service businesses across the United States.
           </div>
           <div className={styles.socialIcons}>
             <a href="#" aria-label="Twitter">

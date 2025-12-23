@@ -1,6 +1,5 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import PageHero from "@/components/ui/PageHero";
 import Features from "@/components/sections/Features";
 import Stats from "@/components/sections/Stats";
 import CTA from "@/components/sections/CTA";
@@ -33,12 +32,7 @@ export default function About() {
       />
       <Navbar />
       <main>
-        <PageHero
-          badge={{ icon: "shield-halved", text: "AGENCY CAPABILITIES" }}
-          title="Explore the Power of AnuTech Solutions"
-          description="Discover how AnuTech transforms complex challenges into actionable results. Our advanced methodologies are designed to optimize business workflows."
-        />
-        <Features showHeader={false} />
+        <Features showHeader={true} />
         <Stats />
         <CTA />
       </main>

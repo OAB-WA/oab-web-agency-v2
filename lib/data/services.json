@@ -1,47 +1,39 @@
 {
   "services": [
     {
-      "id": "web-dev",
+      "id": "web-design",
       "icon": "laptop-code",
-      "title": "Custom Web Development",
-      "description": "We build production-ready applications using React, Vue, and Angular. From wireframes to High-Fidelity interactive platforms.",
-      "feature": "Fast Deployment"
+      "title": "High-Converting Website Design",
+      "description": "We build websites that turn visitors into customers. Every element is designed to generate leads and drive conversions for your service business.",
+      "feature": "Conversion-Focused Design"
     },
     {
-      "id": "mobile",
+      "id": "lead-generation",
       "icon": "mobile-screen-button",
-      "title": "Mobile App Solutions",
-      "description": "Engage your customers anywhere with native and cross-platform mobile applications. We prioritize user experience, fluid animations, and offline capabilities.",
-      "feature": "iOS & Android (Flutter/React Native)"
+      "title": "Lead Generation Systems",
+      "description": "Built-in contact forms, booking systems, and lead capture tools that work seamlessly on mobile and desktop. Get more qualified leads automatically.",
+      "feature": "Mobile-First Lead Capture"
     },
     {
-      "id": "cloud",
+      "id": "local-seo",
       "icon": "cloud-arrow-up",
-      "title": "Cloud & DevOps Engineering",
-      "description": "Optimize your infrastructure costs and security. We manage cloud migrations and set up automated CI/CD pipelines for faster, safer releases.",
-      "feature": "AWS / Azure / Google Cloud"
+      "title": "Local SEO Optimization",
+      "description": "Get found by customers in your area. We optimize your website for local search so potential customers can easily find and contact you.",
+      "feature": "Google My Business Integration"
     },
     {
-      "id": "design",
+      "id": "conversion-optimization",
       "icon": "pen-nib",
-      "title": "Product Design (UI/UX)",
-      "description": "We transform complex requirements into intuitive, beautiful interfaces. Our design process ensures your product is not just functional, but delightful to use.",
-      "feature": "Wireframing & Prototyping"
+      "title": "Conversion Rate Optimization",
+      "description": "We analyze your website's performance and continuously optimize to increase conversions. Turn more visitors into paying customers.",
+      "feature": "A/B Testing & Analytics"
     },
     {
-      "id": "ai",
-      "icon": "brain",
-      "title": "AI & Business Automation",
-      "description": "Leverage the power of Artificial Intelligence to automate repetitive tasks and gain predictive insights from your data.",
-      "feature": "Custom Chatbots & NLP",
-      "hasButton": true
-    },
-    {
-      "id": "consulting",
-      "icon": "chess",
-      "title": "Strategic IT Consulting",
-      "description": "Not sure which tech stack to choose? Our consultants provide roadmap planning to align technology with your business goals.",
-      "feature": "Digital Transformation Strategy",
+      "id": "maintenance",
+      "icon": "gear",
+      "title": "Website Maintenance & Support",
+      "description": "Keep your website fast, secure, and up-to-date. We handle updates, backups, and security so you can focus on running your business.",
+      "feature": "24/7 Monitoring & Support",
       "hasButton": true
     }
   ]

@@ -11,25 +11,24 @@ export default function Features({ showHeader = true }: FeaturesProps) {
       {showHeader && (
         <div className={styles.fluenceHeader}>
           <span className={styles.badge}>
-            <Icon name="users" size={14} /> AGENCY CAPABILITIES
+            <Icon name="users" size={14} /> CONVERSION FEATURES
           </span>
           <h2 className={styles.heroTitle}>
-            Explore the Power of AnuTech Solutions
+            Built to Convert Visitors Into Customers
           </h2>
           <p className={styles.heroDesc}>
-            Discover how AnuTech transforms complex challenges into actionable
-            results. Our advanced methodologies are designed to optimize business
-            workflows.
+            Every feature is designed with one goal in mind: turning website visitors 
+            into leads and customers. We focus on what drives real results for service businesses.
           </p>
         </div>
       )}
       <div className={styles.featureCard}>
         <div className={styles.cardContent}>
-          <h2>Seamless Data Integration Process</h2>
+          <h2>Conversion-Optimized Features That Drive Results</h2>
           <p className={styles.cardDesc}>
-            Effortlessly connect your business systems with diverse data
-            sources, ensuring smooth flow for real-time insights and accurate
-            analysis.
+            Our websites are built with conversion-focused features that help service businesses 
+            capture more leads, book more appointments, and grow their revenue. Every element 
+            is designed to turn visitors into customers.
           </p>
 
           <ul className={styles.featureList}>
@@ -43,12 +42,18 @@ export default function Features({ showHeader = true }: FeaturesProps) {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                  <path d="M3 5v14c0 1.66 4 3 9 3s 9-1.34 9-3V5"></path>
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                  <path d="M8 14h.01"></path>
+                  <path d="M12 14h.01"></path>
+                  <path d="M16 14h.01"></path>
+                  <path d="M8 18h.01"></path>
+                  <path d="M12 18h.01"></path>
                 </svg>
               </div>
-              <span>Enterprise Architecture</span>
+              <span>Lead Capture Forms & Booking Systems</span>
             </li>
             <li>
               <div className={styles.iconBox}>
@@ -60,11 +65,11 @@ export default function Features({ showHeader = true }: FeaturesProps) {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
                 </svg>
               </div>
-              <span>Real-Time Cloud Sync</span>
+              <span>Mobile-First Design (70% of searches are mobile)</span>
             </li>
             <li>
               <div className={styles.iconBox}>
@@ -76,14 +81,11 @@ export default function Features({ showHeader = true }: FeaturesProps) {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  <circle cx="18" cy="5" r="3"></circle>
-                  <circle cx="6" cy="12" r="3"></circle>
-                  <circle cx="18" cy="19" r="3"></circle>
-                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 6v6l4 2"></path>
                 </svg>
               </div>
-              <span>Custom API Development</span>
+              <span>Fast Loading Times (affects conversions & SEO)</span>
             </li>
           </ul>
         </div>
@@ -92,17 +94,17 @@ export default function Features({ showHeader = true }: FeaturesProps) {
           <div className={styles.glowBlob}></div>
           <div className={styles.glassMockup}>
             <div className={styles.mockupHeader}>
-              <span>Growth</span>
-              <strong>Market Analysis</strong>
+              <span>Leads</span>
+              <strong>Monthly Growth</strong>
             </div>
             <div className={styles.mockupChart}>
               <div className={styles.bar} style={{ height: "40%" }}></div>
               <div className={styles.bar} style={{ height: "70%" }}></div>
-              <div className={styles.bar} style={{ height: "50%" }}></div>
-              <div className={styles.bar} style={{ height: "90%" }}></div>
+              <div className={styles.bar} style={{ height: "85%" }}></div>
+              <div className={styles.bar} style={{ height: "95%" }}></div>
             </div>
             <div className={styles.mockupFooter}>
-              <span>Current Status: Optimization</span>
+              <span>Current Status: 3x Lead Increase</span>
             </div>
           </div>
         </div>

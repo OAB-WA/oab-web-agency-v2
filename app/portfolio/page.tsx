@@ -1,6 +1,5 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import PageHero from "@/components/ui/PageHero";
 import Portfolio from "@/components/sections/Portfolio";
 import { getBreadcrumbSchema } from "@/lib/seo/structured-data";
 import siteConfig from "@/lib/data/site-config.json";
@@ -31,12 +30,7 @@ export default function PortfolioPage() {
       />
       <Navbar />
       <main>
-        <PageHero
-          badge={{ icon: "file", text: "Our Work" }}
-          title="Digital Products that Scale."
-          description="Explore our recent case studies in FinTech, Healthcare, and E-commerce."
-        />
-        <Portfolio />
+        <Portfolio showHeader={true} />
       </main>
       <Footer />
     </>

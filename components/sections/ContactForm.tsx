@@ -8,6 +8,11 @@ export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
+    businessType: "",
+    preferredContactTime: "",
+    monthlyLeadGoal: "",
+    currentWebsite: "",
     message: "",
     honeypot: "", // Spam protection
   });
@@ -34,7 +39,17 @@ export default function ContactForm() {
       
       if (response.ok) {
         setSubmitStatus("success");
-        setFormData({ name: "", email: "", message: "", honeypot: "" });
+        setFormData({ 
+          name: "", 
+          email: "", 
+          phone: "",
+          businessType: "",
+          preferredContactTime: "",
+          monthlyLeadGoal: "",
+          currentWebsite: "",
+          message: "", 
+          honeypot: "" 
+        });
       } else {
         setSubmitStatus("error");
         console.error("Form submission error:", data.error);
@@ -47,7 +62,7 @@ export default function ContactForm() {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     setFormData({
       ...formData,
@@ -81,14 +96,85 @@ export default function ContactForm() {
           />
         </div>
         <div className={styles.formGroup}>
-          <label>Message</label>
+          <label>Phone <span style={{ fontSize: "0.85rem", fontWeight: "normal", color: "#666" }}>(We'll call during USA business hours)</span></label>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="+1 (555) 123-4567"
+            value={formData.phone}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className={styles.formGroup}>
+          <label>Business Type</label>
+          <select
+            name="businessType"
+            value={formData.businessType}
+            onChange={handleChange}
+            required
+          >
+            <option value="">Select your business type</option>
+            <option value="plumber">Plumber</option>
+            <option value="electrician">Electrician</option>
+            <option value="hvac">HVAC</option>
+            <option value="landscaping">Landscaping</option>
+            <option value="lawyer">Lawyer / Legal Services</option>
+            <option value="accountant">Accountant</option>
+            <option value="consultant">Consultant</option>
+            <option value="dentist">Dentist</option>
+            <option value="chiropractor">Chiropractor</option>
+            <option value="fitness">Fitness / Personal Trainer</option>
+            <option value="salon">Salon / Beauty</option>
+            <option value="other">Other Service Business</option>
+          </select>
+        </div>
+        <div className={styles.formGroup}>
+          <label>Preferred Contact Time</label>
+          <select
+            name="preferredContactTime"
+            value={formData.preferredContactTime}
+            onChange={handleChange}
+          >
+            <option value="">Select preferred time</option>
+            <option value="morning-est">Morning (9 AM - 12 PM EST)</option>
+            <option value="afternoon-est">Afternoon (12 PM - 5 PM EST)</option>
+            <option value="evening-est">Evening (5 PM - 8 PM EST)</option>
+            <option value="flexible">Flexible</option>
+          </select>
+        </div>
+        <div className={styles.formGroup}>
+          <label>Monthly Lead Goal</label>
+          <select
+            name="monthlyLeadGoal"
+            value={formData.monthlyLeadGoal}
+            onChange={handleChange}
+          >
+            <option value="">Select your goal</option>
+            <option value="10-20">10-20 leads per month</option>
+            <option value="21-50">21-50 leads per month</option>
+            <option value="51-100">51-100 leads per month</option>
+            <option value="100+">100+ leads per month</option>
+          </select>
+        </div>
+        <div className={styles.formGroup}>
+          <label>Current Website (Optional)</label>
+          <input
+            type="url"
+            name="currentWebsite"
+            placeholder="https://yourwebsite.com"
+            value={formData.currentWebsite}
+            onChange={handleChange}
+          />
+        </div>
+        <div className={styles.formGroup}>
+          <label>Message (Optional)</label>
           <textarea
             name="message"
             rows={4}
-            placeholder="Tell us about your project..."
+            placeholder="Tell us about your business and goals..."
             value={formData.message}
             onChange={handleChange}
-            required
           />
         </div>
         {/* Honeypot field for spam protection */}

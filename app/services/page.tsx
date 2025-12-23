@@ -1,6 +1,5 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import PageHero from "@/components/ui/PageHero";
 import Services from "@/components/sections/Services";
 import Stats from "@/components/sections/Stats";
 import CTA from "@/components/sections/CTA";
@@ -33,12 +32,7 @@ export default function ServicesPage() {
       />
       <Navbar />
       <main>
-        <PageHero
-          badge={{ icon: "gear", text: "Our Expertise" }}
-          title="End-to-End Technology Solutions"
-          description="From initial concept to final deployment, we provide a full spectrum of IT services tailored to scale your business infrastructure."
-        />
-        <Services showHeader={false} />
+        <Services showHeader={true} />
         <Stats />
         <CTA />
       </main>

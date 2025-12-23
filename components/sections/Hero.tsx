@@ -16,22 +16,22 @@ export default function Hero() {
           <span className={styles.sparkle}>
             <Icon name="gem" size={14} />
           </span>{" "}
-          Your Partner in Digital Excellence
+          ✓ English-speaking team | ✓ USA business hours | ✓ 150+ USA clients
         </div>
         <h1>
-          Innovative IT Solutions <br /> for{" "}
-          <span className={styles.typingText}>Visionaries</span>
+          Websites That Turn <br /> Visitors Into{" "}
+          <span className={styles.typingText}>Customers</span>
         </h1>
         <p className={styles.subtext}>
-          We deliver high-performance software, custom web development, and
-          strategic technology consulting to scale your business.
+          We build high-converting websites for service businesses across the United States. 
+          Get more leads, more bookings, and more revenue with a website designed to convert.
         </p>
         <div className={styles.ctaGroup}>
           <Link href="/contact" className="btn-primary button">
-            Start Project
+            Get Free Website Audit
           </Link>
           <Link href="/portfolio" className="btn-glass button">
-            Our Work
+            See Our Work
           </Link>
         </div>
         <div className={styles.trustSignal}>
@@ -58,7 +58,7 @@ export default function Hero() {
               className={styles.avatar}
             />
           </div>
-          <span>Trusted by 500+ Global Companies</span>
+          <span>Trusted by 150+ service businesses across the USA</span>
         </div>
       </div>
 
@@ -117,24 +117,24 @@ export default function Hero() {
               {/* Stats Row */}
               <div className={styles.dashStatsGrid}>
                 <div className={styles.statBox}>
-                  <span className={styles.label}>Total Revenue</span>
-                  <h3>$124,500</h3>
+                  <span className={styles.label}>Monthly Leads</span>
+                  <h3>245</h3>
                   <span className={`${styles.trend} ${styles.up}`}>
-                    <Icon name="arrow-trend-up" size={14} /> +14%
+                    <Icon name="arrow-trend-up" size={14} /> +180%
                   </span>
                 </div>
                 <div className={styles.statBox}>
-                  <span className={styles.label}>Active Users</span>
-                  <h3>8,450</h3>
+                  <span className={styles.label}>Conversion Rate</span>
+                  <h3>8.2%</h3>
                   <span className={`${styles.trend} ${styles.up}`}>
-                    <Icon name="arrow-trend-up" size={14} /> +8%
+                    <Icon name="arrow-trend-up" size={14} /> +3.5%
                   </span>
                 </div>
                 <div className={styles.statBox}>
-                  <span className={styles.label}>Server Load</span>
-                  <h3>32%</h3>
+                  <span className={styles.label}>Page Speed</span>
+                  <h3>98</h3>
                   <span className={`${styles.trend} ${styles.down}`}>
-                    <Icon name="check" size={14} /> Optimal
+                    <Icon name="check" size={14} /> Excellent
                   </span>
                 </div>
               </div>
@@ -142,10 +142,10 @@ export default function Hero() {
               {/* Big Chart Section */}
               <div className={styles.dashChartSection}>
                 <div className={styles.chartHeader}>
-                  <h4>Performance Overview</h4>
+                  <h4>Lead Generation Growth</h4>
                   <div className={styles.chartTabs}>
-                    <span className={styles.active}>Daily</span>
-                    <span>Weekly</span>
+                    <span className={styles.active}>Monthly</span>
+                    <span>Quarterly</span>
                   </div>
                 </div>
                 <div className={styles.cssBarChart}>
@@ -184,8 +184,8 @@ export default function Hero() {
               <Icon name="bolt" size={20} />
             </div>
             <div className={styles.text}>
-              <span className={styles.caption}>Efficiency</span>
-              <strong>+120% Boost</strong>
+              <span className={styles.caption}>Lead Increase</span>
+              <strong>+300% Growth</strong>
             </div>
           </div>
 

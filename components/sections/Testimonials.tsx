@@ -13,12 +13,12 @@ export default function Testimonials() {
       <div className="container">
         <div className={styles.testiHeader}>
           <div className={styles.pillBadge}>
-            <Icon name="comment-dots" size={14} /> What Teams Are Saying
+            <Icon name="comment-dots" size={14} /> Client Success Stories
           </div>
-          <h2>See what our users are saying.</h2>
+          <h2>See what service business owners are saying.</h2>
           <p className={styles.subtext}>
-            Real stories from teams who streamlined their workflow and delivered
-            more with less.
+            Real results from service businesses across the USA who increased their leads, 
+            bookings, and revenue with our conversion-focused websites.
           </p>
         </div>
       </div>
@@ -38,7 +38,7 @@ export default function Testimonials() {
                 />
                 <div className={styles.userInfo}>
                   <strong>{testimonial.name}</strong>
-                  <span>{testimonial.role}</span>
+                  <span>{testimonial.role}{testimonial.location ? ` • ${testimonial.location}` : ""}</span>
                 </div>
               </div>
               <p>{testimonial.text}</p>
@@ -60,7 +60,7 @@ export default function Testimonials() {
                 />
                 <div className={styles.userInfo}>
                   <strong>{testimonial.name}</strong>
-                  <span>{testimonial.role}</span>
+                  <span>{testimonial.role}{testimonial.location ? ` • ${testimonial.location}` : ""}</span>
                 </div>
               </div>
               <p>{testimonial.text}</p>

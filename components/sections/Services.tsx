@@ -17,12 +17,12 @@ export default function Services({ showHeader = true }: ServicesProps) {
         {showHeader && (
           <div className={styles.devHeader}>
             <span className={styles.label}>
-              <Icon name="graduation-cap" size={14} /> Our Expertise
+              <Icon name="graduation-cap" size={14} /> Our Services
             </span>
-            <h2>End-to-End Technology Solutions</h2>
+            <h2>Conversion-Focused Services for Service Businesses</h2>
             <p className={styles.desc}>
-              From initial concept to final deployment, we provide a full spectrum
-              of IT services tailored to scale your business infrastructure.
+              Everything we do is designed to help service businesses get more leads, 
+              more bookings, and more revenue. We specialize in what drives real results.
             </p>
           </div>
         )}
