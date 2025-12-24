@@ -16,7 +16,7 @@ export default function Hero() {
           <span className={styles.sparkle}>
             <Icon name="gem" size={14} />
           </span>{" "}
-          ✓ English-speaking team | ✓ USA business hours | ✓ 150+ USA clients
+          Your Partner in Digital Excellence
         </div>
         <h1>
           Websites That Turn <br /> Visitors Into{" "}
