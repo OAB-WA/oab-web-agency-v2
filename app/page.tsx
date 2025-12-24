@@ -4,8 +4,11 @@ import Hero from "@/components/sections/Hero";
 import Partners from "@/components/sections/Partners";
 import Features from "@/components/sections/Features";
 import Services from "@/components/sections/Services";
+import Process from "@/components/sections/Process";
 import Stats from "@/components/sections/Stats";
 import Testimonials from "@/components/sections/Testimonials";
+import FAQPreview from "@/components/sections/FAQPreview";
+import Guarantee from "@/components/sections/Guarantee";
 import CTA from "@/components/sections/CTA";
 import { getBreadcrumbSchema } from "@/lib/seo/structured-data";
 import siteConfig from "@/lib/data/site-config.json";
@@ -40,8 +43,11 @@ export default function Home() {
         <Partners />
         <Features showHeader={true} />
         <Services showHeader={true} />
+        <Process />
         <Stats />
         <Testimonials />
+        <FAQPreview />
+        <Guarantee />
         <CTA />
       </main>
       <Footer />

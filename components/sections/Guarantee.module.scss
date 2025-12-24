@@ -1,0 +1,106 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.guaranteeSection {
+  padding: 80px 20px 20px;
+  background: linear-gradient(135deg, #fff0e9 0%, #ffffff 100%);
+
+  @media (max-width: 1024px) {
+    padding: 60px 20px 20px;
+  }
+
+  .guaranteeHeader {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #FF6B00;
+      border: 1px solid rgba(255, 107, 0, 0.3);
+      padding: 6px 16px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+      background: rgba(255, 107, 0, 0.1);
+    }
+
+    h2 {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      font-weight: 400;
+      margin-bottom: 20px;
+      color: var(--text-dark);
+      line-height: 1.2;
+
+      @media (max-width: 768px) {
+        font-size: 1.75rem;
+      }
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+  }
+
+  .guaranteeGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    .guaranteeCard {
+      background: #fff;
+      padding: 35px;
+      border-radius: 16px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: all 0.3s ease;
+
+      &:hover {
+        border-color: rgba(255, 107, 0, 0.3);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        transform: translateY(-5px);
+      }
+
+      .iconWrapper {
+        width: 70px;
+        height: 70px;
+        background: rgba(255, 107, 0, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        color: #FF6B00;
+      }
+
+      h3 {
+        font-family: var(--font-heading);
+        font-size: 1.3rem;
+        margin-bottom: 12px;
+        color: var(--text-dark);
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: var(--text-muted);
+        line-height: 1.7;
+        margin: 0;
+      }
+    }
+  }
+}
+

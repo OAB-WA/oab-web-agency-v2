@@ -1,0 +1,65 @@
+{
+  "faqs": [
+    {
+      "id": "pricing",
+      "question": "How much does a website cost?",
+      "answer": "Our website packages start at $2,500 for a basic service business website. Most of our clients invest between $3,500-$6,000 for a complete conversion-focused website with booking system and local SEO setup. The exact price depends on your specific needs - we'll provide a detailed quote after our free consultation."
+    },
+    {
+      "id": "timeline",
+      "question": "How long does it take to build a website?",
+      "answer": "Typically, a complete website takes 4-6 weeks from start to finish. This includes design, development, content setup, and testing. If you need it faster, we can discuss rush options. We'll keep you updated throughout the process so you always know where things stand."
+    },
+    {
+      "id": "remote",
+      "question": "You're not in the USA - how does that work?",
+      "answer": "We're a remote-first agency that specializes in USA service businesses. We work with clients across all time zones and are available during USA business hours (9 AM - 5 PM EST). All communication is in English, and we understand the unique needs of USA service businesses, including local SEO and Google My Business optimization."
+    },
+    {
+      "id": "results",
+      "question": "How quickly will I see results?",
+      "answer": "Most clients start seeing an increase in leads within 60-90 days after launch. This gives time for Google to index your new site and for local SEO to start working. However, some clients see results faster, especially if they already have some online presence. We'll set realistic expectations during our consultation."
+    },
+    {
+      "id": "maintenance",
+      "question": "What happens after the website is done?",
+      "answer": "We offer ongoing maintenance and support packages starting at $99/month. This includes security updates, backups, content updates, and technical support. You're not required to sign up for maintenance, but we recommend it to keep your site secure and running smoothly. You can also handle updates yourself if you prefer."
+    },
+    {
+      "id": "booking",
+      "question": "Can I accept bookings or appointments online?",
+      "answer": "Yes! We can integrate online booking systems that let customers schedule appointments directly on your website. This works great for service businesses like plumbers, electricians, salons, fitness studios, and more. The booking system syncs with your calendar so you don't get double-booked."
+    },
+    {
+      "id": "seo",
+      "question": "Will my website show up on Google?",
+      "answer": "Yes, we build every website with SEO in mind so Google can find and rank it. We also set up local SEO which is crucial for service businesses - this helps you show up when people search for services in your area. However, ranking on page 1 takes time (usually 3-6 months) and depends on many factors including competition in your area."
+    },
+    {
+      "id": "mobile",
+      "question": "Will my website work on phones?",
+      "answer": "Absolutely! We build all websites mobile-first, meaning they're designed to work perfectly on phones, tablets, and computers. Since most people search for services on their phones, this is essential for getting more leads."
+    },
+    {
+      "id": "content",
+      "question": "Do you write the content for my website?",
+      "answer": "We can help with content, but you know your business best. We'll provide a content guide and can write basic pages, but we recommend you provide the main content about your services, pricing, and what makes you different. We'll help organize it and make sure it's optimized for conversions."
+    },
+    {
+      "id": "guarantee",
+      "question": "Do you guarantee more leads?",
+      "answer": "While we can't guarantee a specific number of leads (that depends on many factors including your market, competition, and pricing), we do guarantee that your website will be built to convert visitors into leads. We focus on proven conversion strategies and track results. Most of our clients see a significant increase in leads within 90 days."
+    },
+    {
+      "id": "payment",
+      "question": "How do I pay?",
+      "answer": "We typically work with a 50% deposit to start, and the remaining 50% when the website is complete and you're happy with it. We accept bank transfers, credit cards, and other standard payment methods. We'll discuss payment terms during our consultation."
+    },
+    {
+      "id": "changes",
+      "question": "Can I make changes to my website later?",
+      "answer": "Yes! After launch, you can either make changes yourself (if you're comfortable with it), or we can handle updates for you. We offer maintenance packages that include content updates, or you can pay per update. We'll train you on how to make basic changes if you want to do it yourself."
+    }
+  ]
+}
+

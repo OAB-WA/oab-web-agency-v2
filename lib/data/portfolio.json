@@ -1,40 +1,40 @@
 {
   "projects": [
     {
-      "id": "finflow",
-      "title": "FinFlow Global",
-      "description": "Revolutionizing cross-border crypto payments.",
-      "tags": ["FinTech", "Mobile App"],
+      "id": "johnson-plumbing",
+      "title": "Johnson Plumbing - Austin, TX",
+      "description": "Tripled monthly leads with conversion-focused website and online booking system.",
+      "tags": ["Plumbing", "Local SEO", "Booking System"],
       "image": "/images/portfolio.png",
-      "year": "2025",
-      "url": "#"
+      "year": "2024",
+      "url": "/case-studies"
     },
     {
-      "id": "medicare",
-      "title": "MediCare Systems",
-      "description": "HIPAA compliant patient management portal.",
-      "tags": ["Healthcare", "Dashboard"],
+      "id": "martinez-legal",
+      "title": "Martinez Legal Services - Phoenix, AZ",
+      "description": "Increased consultations from 2-3 to 12-15 per month with lead generation website.",
+      "tags": ["Legal", "Lead Generation", "Local SEO"],
       "image": "/images/portfolio2.png",
-      "year": "2025",
-      "url": "#"
+      "year": "2024",
+      "url": "/case-studies"
     },
     {
-      "id": "velvet",
-      "title": "Velvet Fashion",
-      "description": "Scaling a D2C brand to 10k orders per day.",
-      "tags": ["E-Commerce", "Shopify"],
-      "image": "/images/portfolio2.png",
-      "year": "2025",
-      "url": "#"
-    },
-    {
-      "id": "datasense",
-      "title": "DataSense AI",
-      "description": "Predictive analytics for enterprise logistics.",
-      "tags": ["AI & ML", "SaaS"],
+      "id": "chen-hvac",
+      "title": "Chen HVAC Services - Orlando, FL",
+      "description": "250% increase in service bookings with mobile-first design and booking system.",
+      "tags": ["HVAC", "Mobile-First", "Booking"],
       "image": "/images/portfolio.png",
-      "year": "2025",
-      "url": "#"
+      "year": "2024",
+      "url": "/case-studies"
+    },
+    {
+      "id": "williams-fitness",
+      "title": "Williams Fitness Studio - Denver, CO",
+      "description": "Doubled class bookings and saved 10 hours per week with integrated booking system.",
+      "tags": ["Fitness", "Booking System", "Time Savings"],
+      "image": "/images/portfolio2.png",
+      "year": "2024",
+      "url": "/case-studies"
     }
   ]
 }

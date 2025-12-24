@@ -31,6 +31,43 @@ export interface PortfolioProject {
   url: string;
 }
 
+export interface CaseStudy {
+  id: string;
+  title: string;
+  industry: string;
+  location: string;
+  description: string;
+  image: string;
+  year: string;
+  url: string;
+  metrics: {
+    before: {
+      leads: string;
+      phoneCalls?: string;
+      conversionRate?: string;
+      websiteTraffic?: string;
+      noShowRate?: string;
+      mobileTraffic?: string;
+      bookings?: string;
+      adminTime?: string;
+      onlineBookings?: string;
+    };
+    after: {
+      leads: string;
+      phoneCalls?: string;
+      conversionRate?: string;
+      websiteTraffic?: string;
+      noShowRate?: string;
+      mobileTraffic?: string;
+      bookings?: string;
+      adminTime?: string;
+      onlineBookings?: string;
+    };
+  };
+  tags: string[];
+  highlight: string;
+}
+
 export interface Testimonial {
   name: string;
   role: string;

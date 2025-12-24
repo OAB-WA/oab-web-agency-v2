@@ -1,0 +1,75 @@
+{
+  "packages": [
+    {
+      "id": "modern-presence",
+      "name": "Modern Presence",
+      "priceRange": "$1,000 – $1,250",
+      "positioning": "For service businesses that need a modern, trustworthy website",
+      "features": [
+        "Mobile-first modern design that builds trust",
+        "Core pages (Home, Services, About, Contact)",
+        "Fast loading & basic SEO setup",
+        "Contact form + click-to-call buttons",
+        "Professional look that converts visitors"
+      ],
+      "outcomes": [
+        "Professional online presence",
+        "More customer trust and credibility",
+        "Easy way for customers to contact you"
+      ],
+      "popular": false
+    },
+    {
+      "id": "lead-booster",
+      "name": "Lead Booster",
+      "priceRange": "$2,000 – $2,500",
+      "positioning": "For businesses that want more calls and enquiries",
+      "features": [
+        "Everything in Modern Presence, plus:",
+        "Performance optimization (speed & mobile)",
+        "Conversion-focused layout designed to get leads",
+        "Online booking or service request system",
+        "Analytics & lead tracking setup"
+      ],
+      "outcomes": [
+        "More phone calls from your website",
+        "More service requests and bookings",
+        "Track where your leads are coming from"
+      ],
+      "popular": true
+    },
+    {
+      "id": "conversion-engine",
+      "name": "Conversion Engine",
+      "priceRange": "$3,500 – $5,000",
+      "positioning": "For service businesses focused on growth and ROI",
+      "features": [
+        "Everything in Lead Booster, plus:",
+        "Advanced booking & automation",
+        "Email notifications for new leads",
+        "Conversion optimization to maximize results",
+        "SEO foundations for local search"
+      ],
+      "outcomes": [
+        "Maximum leads and bookings",
+        "Automated lead capture and notifications",
+        "Strong local search presence",
+        "Measurable ROI and growth"
+      ],
+      "popular": false
+    }
+  ],
+  "monthlySupport": {
+    "title": "Monthly Support & Growth",
+    "description": "Ongoing updates, performance monitoring, and optimization",
+    "priceRange": "$300 – $1,000/month",
+    "benefits": [
+      "Keep your website updated and secure",
+      "Monitor performance and make improvements",
+      "Ongoing optimization for better results",
+      "Dedicated support when you need it"
+    ]
+  },
+  "disclaimer": "Final pricing depends on business size, features, and goals."
+}
+

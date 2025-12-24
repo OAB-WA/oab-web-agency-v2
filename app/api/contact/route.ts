@@ -45,17 +45,27 @@ export async function POST(request: NextRequest) {
     }
 
     const body = await request.json();
-    const { name, email, message, honeypot } = body;
+    const { 
+      name, 
+      email, 
+      phone, 
+      businessType, 
+      preferredContactTime, 
+      monthlyLeadGoal, 
+      currentWebsite, 
+      message, 
+      honeypot 
+    } = body;
 
     // Honeypot check (spam protection)
     if (honeypot) {
       return NextResponse.json({ success: true }, { status: 200 });
     }
 
-    // Validation
-    if (!name || !email || !message) {
+    // Validation - required fields
+    if (!name || !email || !phone || !businessType) {
       return NextResponse.json(
-        { error: "All fields are required." },
+        { error: "Name, email, phone, and business type are required." },
         { status: 400 }
       );
     }
@@ -69,18 +79,24 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Sanitize inputs
-    const sanitizedName = sanitizeInput(name);
-    const sanitizedEmail = sanitizeInput(email);
-    const sanitizedMessage = sanitizeInput(message);
-
-    // Check message length
-    if (sanitizedMessage.length < 10) {
+    // Phone validation (basic - allows various formats)
+    const phoneRegex = /^[\d\s\-\+\(\)]+$/;
+    if (!phoneRegex.test(phone) || phone.replace(/\D/g, '').length < 10) {
       return NextResponse.json(
-        { error: "Message must be at least 10 characters long." },
+        { error: "Please enter a valid phone number." },
         { status: 400 }
       );
     }
+
+    // Sanitize inputs
+    const sanitizedName = sanitizeInput(name);
+    const sanitizedEmail = sanitizeInput(email);
+    const sanitizedPhone = sanitizeInput(phone);
+    const sanitizedBusinessType = sanitizeInput(businessType);
+    const sanitizedPreferredContactTime = preferredContactTime ? sanitizeInput(preferredContactTime) : "";
+    const sanitizedMonthlyLeadGoal = monthlyLeadGoal ? sanitizeInput(monthlyLeadGoal) : "";
+    const sanitizedCurrentWebsite = currentWebsite ? sanitizeInput(currentWebsite) : "";
+    const sanitizedMessage = message ? sanitizeInput(message) : "";
 
     // Check if Resend is configured
     if (!resend) {
@@ -92,10 +108,10 @@ export async function POST(request: NextRequest) {
 
     // Send email via Resend
     const { data, error } = await resend.emails.send({
-      from: "AnuTech Contact <onboarding@resend.dev>", // Update with your verified domain
+      from: "OAB Web Agency <onboarding@resend.dev>", // Update with your verified domain
       to: contactData.contact.email, // or process.env.CONTACT_EMAIL
       replyTo: sanitizedEmail,
-      subject: `New Contact Form Submission from ${sanitizedName}`,
+      subject: `New Contact Form Submission - ${sanitizedBusinessType} Business`,
       html: `
         <!DOCTYPE html>
         <html>
@@ -126,9 +142,37 @@ export async function POST(request: NextRequest) {
                   <div class="value">${sanitizedEmail}</div>
                 </div>
                 <div class="field">
+                  <div class="label">Phone:</div>
+                  <div class="value">${sanitizedPhone}</div>
+                </div>
+                <div class="field">
+                  <div class="label">Business Type:</div>
+                  <div class="value">${sanitizedBusinessType}</div>
+                </div>
+                ${sanitizedPreferredContactTime ? `
+                <div class="field">
+                  <div class="label">Preferred Contact Time:</div>
+                  <div class="value">${sanitizedPreferredContactTime}</div>
+                </div>
+                ` : ""}
+                ${sanitizedMonthlyLeadGoal ? `
+                <div class="field">
+                  <div class="label">Monthly Lead Goal:</div>
+                  <div class="value">${sanitizedMonthlyLeadGoal}</div>
+                </div>
+                ` : ""}
+                ${sanitizedCurrentWebsite ? `
+                <div class="field">
+                  <div class="label">Current Website:</div>
+                  <div class="value"><a href="${sanitizedCurrentWebsite}" target="_blank">${sanitizedCurrentWebsite}</a></div>
+                </div>
+                ` : ""}
+                ${sanitizedMessage ? `
+                <div class="field">
                   <div class="label">Message:</div>
                   <div class="value">${sanitizedMessage.replace(/\n/g, "<br>")}</div>
                 </div>
+                ` : ""}
                 <div class="field">
                   <div class="label">Submitted:</div>
                   <div class="value">${new Date().toLocaleString()}</div>
@@ -139,11 +183,16 @@ export async function POST(request: NextRequest) {
         </html>
       `,
       text: `
-New Contact Form Submission
+New Contact Form Submission - OAB Web Agency
 
 Name: ${sanitizedName}
 Email: ${sanitizedEmail}
-Message: ${sanitizedMessage}
+Phone: ${sanitizedPhone}
+Business Type: ${sanitizedBusinessType}
+${sanitizedPreferredContactTime ? `Preferred Contact Time: ${sanitizedPreferredContactTime}` : ""}
+${sanitizedMonthlyLeadGoal ? `Monthly Lead Goal: ${sanitizedMonthlyLeadGoal}` : ""}
+${sanitizedCurrentWebsite ? `Current Website: ${sanitizedCurrentWebsite}` : ""}
+${sanitizedMessage ? `Message: ${sanitizedMessage}` : ""}
 
 Submitted: ${new Date().toLocaleString()}
       `,

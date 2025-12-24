@@ -1,10 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Icon from "../ui/Icon";
 import styles from "./ContactForm.module.scss";
 
 export default function ContactForm() {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -38,18 +40,8 @@ export default function ContactForm() {
       const data = await response.json();
       
       if (response.ok) {
-        setSubmitStatus("success");
-        setFormData({ 
-          name: "", 
-          email: "", 
-          phone: "",
-          businessType: "",
-          preferredContactTime: "",
-          monthlyLeadGoal: "",
-          currentWebsite: "",
-          message: "", 
-          honeypot: "" 
-        });
+        // Redirect to thank you page
+        router.push("/thank-you");
       } else {
         setSubmitStatus("error");
         console.error("Form submission error:", data.error);

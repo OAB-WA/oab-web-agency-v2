@@ -1,0 +1,145 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.thankYouSection {
+  padding: 120px 20px;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to bottom, #ffffff, #fff0e9);
+
+  .thankYouContent {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+
+    .iconWrapper {
+      width: 120px;
+      height: 120px;
+      background: #22c55e;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 30px;
+      color: #fff;
+      animation: scaleIn 0.5s ease;
+    }
+
+    h1 {
+      font-family: var(--font-heading);
+      font-size: 3rem;
+      font-weight: 400;
+      margin-bottom: 20px;
+      color: var(--text-dark);
+
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+
+    .message {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 50px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+
+    .nextSteps {
+      text-align: left;
+      margin-bottom: 40px;
+      background: #fff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+      @media (max-width: 768px) {
+        padding: 30px 20px;
+      }
+
+      h2 {
+        font-family: var(--font-heading);
+        font-size: 2rem;
+        margin-bottom: 30px;
+        text-align: center;
+        color: var(--text-dark);
+
+        @media (max-width: 768px) {
+          font-size: 1.5rem;
+        }
+      }
+
+      .stepsList {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        .step {
+          display: flex;
+          gap: 20px;
+          align-items: flex-start;
+
+          .stepNumber {
+            width: 40px;
+            height: 40px;
+            background: #FF6B00;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            flex-shrink: 0;
+          }
+
+          .stepContent {
+            flex: 1;
+
+            h3 {
+              font-size: 1.2rem;
+              font-weight: 600;
+              margin-bottom: 8px;
+              color: var(--text-dark);
+            }
+
+            p {
+              font-size: 0.95rem;
+              color: var(--text-muted);
+              line-height: 1.7;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .ctaButtons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+
+      @media (max-width: 600px) {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+

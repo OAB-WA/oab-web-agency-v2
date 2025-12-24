@@ -1,0 +1,122 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.faqPreviewSection {
+  padding: 80px 20px 20px;
+  background: #f8f9fa;
+
+  @media (max-width: 1024px) {
+    padding: 60px 20px 20px;
+  }
+
+  .faqPreviewHeader {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #FF6B00;
+      border: 1px solid rgba(255, 107, 0, 0.3);
+      padding: 6px 16px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+      background: rgba(255, 107, 0, 0.1);
+    }
+
+    h2 {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      font-weight: 400;
+      margin-bottom: 20px;
+      color: var(--text-dark);
+      line-height: 1.2;
+
+      @media (max-width: 768px) {
+        font-size: 1.75rem;
+      }
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+
+      a {
+        color: #FF6B00;
+        text-decoration: none;
+        font-weight: 500;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .faqGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    .faqCard {
+      background: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+
+      &:hover {
+        border-color: rgba(255, 107, 0, 0.3);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+
+      h3 {
+        font-family: var(--font-heading);
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 12px;
+        color: var(--text-dark);
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: var(--text-muted);
+        line-height: 1.7;
+        margin: 0;
+      }
+    }
+  }
+
+  .faqCta {
+    text-align: center;
+
+    .faqLink {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #FF6B00;
+      font-weight: 500;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: gap 0.2s ease;
+
+      &:hover {
+        gap: 12px;
+      }
+    }
+  }
+}
+

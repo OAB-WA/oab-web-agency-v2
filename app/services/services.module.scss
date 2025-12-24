@@ -53,29 +53,3 @@
   }
 }
 
-.contactSection {
-  padding: 100px 20px 20px; 
-  @media (max-width: 768px) {
-    padding: 60px 20px 20px;
-  }
-  background-color: #f9fafb;
-
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-
-  .contactWrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-
-    @media (max-width: 768px) {
-      grid-template-columns: 1fr;
-      gap: 40px;
-    }
-  }
-}
-

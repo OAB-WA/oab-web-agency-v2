@@ -6,13 +6,13 @@ import siteConfig from "@/lib/data/site-config.json";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Portfolio - Case Studies for Service Businesses",
   description:
-    "Explore our recent case studies in FinTech, Healthcare, and E-commerce. Digital Products that Scale.",
+    "See real results from service businesses we've helped. Case studies showing increased leads, bookings, and revenue for plumbers, electricians, lawyers, and more.",
   openGraph: {
-    title: "Portfolio | AnuTech",
+    title: "Portfolio | OAB Web Agency",
     description:
-      "Explore our recent case studies in FinTech, Healthcare, and E-commerce.",
+      "See real results from service businesses we've helped across the USA.",
   },
 };
 

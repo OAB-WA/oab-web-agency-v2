@@ -20,15 +20,16 @@ export default function Portfolio({ showHeader = true }: PortfolioProps) {
             <span className={styles.label}>
               <Icon name="file" size={14} /> Our Work
             </span>
-            <h2>Digital Products that Scale.</h2>
+            <h2>Real Results for Service Businesses</h2>
             <p className={styles.desc}>
-              Explore our recent case studies in FinTech, Healthcare, and E-commerce.
+              See how we've helped service businesses across the USA increase their leads, 
+              bookings, and revenue. These are real numbers from real businesses.
             </p>
           </div>
         )}
         <div className={styles.portfolioGrid}>
           {projects.map((project) => (
-            <Link key={project.id} href={project.url} className={styles.portfolioCard}>
+            <Link key={project.id} href="/case-studies" className={styles.portfolioCard}>
               <div className={styles.imageBox}>
                 <Image
                   src={project.image}

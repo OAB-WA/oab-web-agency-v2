@@ -1,0 +1,226 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.heroSection {
+  padding: 120px 20px 80px;
+  background: linear-gradient(to bottom, #ffffff, #fff0e9);
+  text-align: center;
+
+  @media (max-width: 768px) {
+    padding: 100px 20px 60px;
+  }
+
+  .heroContent {
+    max-width: 800px;
+    margin: 0 auto;
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #FF6B00;
+      border: 1px solid rgba(255, 107, 0, 0.3);
+      padding: 6px 16px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+      background: rgba(255, 107, 0, 0.1);
+    }
+
+    h1 {
+      font-family: var(--font-heading);
+      font-size: 3rem;
+      font-weight: 400;
+      margin-bottom: 20px;
+      color: var(--text-dark);
+      line-height: 1.2;
+
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.missionSection {
+  padding: 80px 20px 20px;
+
+  @media (max-width: 768px) {
+    padding: 60px 20px 20px;
+  }
+
+  .missionContent {
+    max-width: 900px;
+    margin: 0 auto;
+
+    .missionText {
+      h2 {
+        font-family: var(--font-heading);
+        font-size: 2.5rem;
+        margin-bottom: 25px;
+        color: var(--text-dark);
+
+        @media (max-width: 768px) {
+          font-size: 1.75rem;
+        }
+      }
+
+      p {
+        font-size: 1.1rem;
+        color: var(--text-muted);
+        line-height: 1.8;
+        margin-bottom: 20px;
+
+        @media (max-width: 768px) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.whySection {
+  padding: 80px 20px 20px;
+  background: #f8f9fa;
+
+  @media (max-width: 768px) {
+    padding: 60px 20px 20px;
+  }
+
+  .sectionTitle {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--text-dark);
+
+    @media (max-width: 768px) {
+      font-size: 1.75rem;
+    }
+  }
+
+  .whyGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    .whyCard {
+      background: #fff;
+      padding: 35px;
+      border-radius: 16px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+
+      &:hover {
+        border-color: rgba(255, 107, 0, 0.3);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        transform: translateY(-5px);
+      }
+
+      .iconWrapper {
+        width: 60px;
+        height: 60px;
+        background: rgba(255, 107, 0, 0.1);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FF6B00;
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        font-family: var(--font-heading);
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: var(--text-dark);
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: var(--text-muted);
+        line-height: 1.7;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.remoteSection {
+  padding: 80px 20px 20px;
+
+  @media (max-width: 768px) {
+    padding: 60px 20px 20px;
+  }
+
+  .remoteContent {
+    max-width: 900px;
+    margin: 0 auto;
+
+    .remoteText {
+      h2 {
+        font-family: var(--font-heading);
+        font-size: 2.5rem;
+        margin-bottom: 25px;
+        color: var(--text-dark);
+
+        @media (max-width: 768px) {
+          font-size: 1.75rem;
+        }
+      }
+
+      p {
+        font-size: 1.1rem;
+        color: var(--text-muted);
+        line-height: 1.8;
+        margin-bottom: 20px;
+
+        @media (max-width: 768px) {
+          font-size: 1rem;
+        }
+      }
+
+      .remoteList {
+        list-style: none;
+        padding: 0;
+        margin: 25px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        li {
+          display: flex;
+          align-items: flex-start;
+          gap: 12px;
+          font-size: 1rem;
+          color: var(--text-muted);
+          line-height: 1.7;
+
+          svg {
+            color: #22c55e;
+            flex-shrink: 0;
+            margin-top: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+

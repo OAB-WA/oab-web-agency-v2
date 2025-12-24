@@ -34,14 +34,14 @@ export default function Contact() {
       />
       <Navbar />
       <main>
-        <section className={styles.contactHeader}>
+        <section className={styles.heroSection}>
           <div className="container">
-            <div className={styles.headerContent}>
-              <span className={styles.label}>
+            <div className={styles.heroContent}>
+              <span className={styles.badge}>
                 <Icon name="envelope" size={14} /> Get In Touch
               </span>
-              <h2>Get Your Free Website Audit</h2>
-              <p className={styles.desc}>
+              <h1>Get Your Free Website Audit</h1>
+              <p className={styles.subtitle}>
                 Ready to get more leads? Fill out the form below and we'll get back to you within 24 hours 
                 with USA business hours availability. Let's discuss how we can help your service business grow.
               </p>

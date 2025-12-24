@@ -39,16 +39,27 @@ export default function Footer() {
               </ul>
             </div>
             <div className={styles.col}>
-              <h4>Trust and Legal</h4>
+              <h4>Resources</h4>
               <ul>
                 <li>
-                  <Link href="#">Terms and Conditions</Link>
+                  <Link href="/case-studies">Case Studies</Link>
                 </li>
                 <li>
-                  <Link href="#">Privacy Policy</Link>
+                  <Link href="/faq">FAQ</Link>
                 </li>
                 <li>
-                  <Link href="#">Security</Link>
+                  <Link href="/pricing">Pricing</Link>
+                </li>
+              </ul>
+            </div>
+            <div className={styles.col}>
+              <h4>Legal</h4>
+              <ul>
+                <li>
+                  <Link href="/terms">Terms of Service</Link>
+                </li>
+                <li>
+                  <Link href="/privacy">Privacy Policy</Link>
                 </li>
               </ul>
             </div>

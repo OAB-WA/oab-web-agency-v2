@@ -11,7 +11,8 @@
     margin: 0 auto;
 
     @media (max-width: 768px) {
-      padding: 40px 0px;
+      padding: 40px 20px 30px;
+      border-radius: 24px;
     }
   }
 
@@ -23,7 +24,8 @@
 
     @media (max-width: 768px) {
       flex-direction: column;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
+      gap: 40px;
     }
 
     .footerLinksA {
@@ -33,67 +35,87 @@
       justify-content: space-between;
 
       @media (max-width: 768px) {
-        gap: 90px;
+        flex-direction: column;
+        gap: 40px;
         justify-content: flex-start;
       }
+    }
+  }
 
-      .col {
-        @media (max-width: 768px) {
-          flex: 1;
-        }
+  .col {
+    h4 {
+      color: #fff;
+      font-family: var(--font-body);
+      font-weight: 600;
+      margin-bottom: 24px;
+      font-size: 1rem;
+
+      @media (max-width: 768px) {
+        margin-bottom: 16px;
+        font-size: 0.95rem;
       }
     }
 
-    .col {
-      h4 {
-        color: #fff;
-        font-family: var(--font-body);
-        font-weight: 600;
-        margin-bottom: 24px;
-        font-size: 1rem;
+    p {
+      font-size: 0.75rem; // $an-tiny
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1.6;
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 350px;
+
+      @media (max-width: 768px) {
+        max-width: 100%;
+        font-size: 0.8rem;
+        margin-bottom: 0;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      @media (max-width: 768px) {
+        margin-bottom: 0;
       }
 
-      p {
-        font-size: 0.75rem; // $an-tiny
-        color: rgba(255, 255, 255, 0.7);
-        line-height: 1.6;
-        position: relative;
-        display: block;
-        width: 100%;
-        height: auto;
-        max-width: 350px;
-      }
+      li {
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
 
-      ul {
-        list-style: none;
+        @media (max-width: 768px) {
+          margin-bottom: 12px;
+        }
 
-        li {
-          margin-bottom: 16px;
-          display: flex;
-          align-items: center;
-          flex-wrap: wrap;
-          gap: 8px;
+        a {
+          color: #9ca3af;
+          font-size: 0.75rem; // $an-tiny
+          transition: color 0.2s;
+          line-height: 1.4;
+          text-decoration: none;
 
-          a {
-            color: #9ca3af;
-            font-size: 0.75rem; // $an-tiny
-            transition: color 0.2s;
-            line-height: 1.4;
-            text-decoration: none;
-
-            &:hover {
-              color: #fff;
-            }
+          @media (max-width: 768px) {
+            font-size: 0.8rem;
           }
 
-          .badgeGray {
-            background: #FF6B00; // $primary-glow
-            color: #000000;
-            font-size: 0.7rem;
-            padding: 2px 8px;
-            border-radius: 6px;
-            font-weight: 500;
+          &:hover {
+            color: #fff;
           }
+        }
+
+        .badgeGray {
+          background: #FF6B00; // $primary-glow
+          color: #000000;
+          font-size: 0.7rem;
+          padding: 2px 8px;
+          border-radius: 6px;
+          font-weight: 500;
         }
       }
     }
@@ -132,13 +154,19 @@
 
     @media (max-width: 768px) {
       flex-direction: column-reverse;
-      gap: 20px;
+      gap: 24px;
       align-items: flex-start;
     }
 
     .copyright {
       color: #6b7280;
       font-size: 0.85rem;
+      line-height: 1.5;
+
+      @media (max-width: 768px) {
+        font-size: 0.8rem;
+        width: 100%;
+      }
     }
 
     .socialIcons {
@@ -146,15 +174,40 @@
       gap: 20px;
       align-items: center;
       justify-content: flex-start;
+      flex-wrap: wrap;
+
+      @media (max-width: 768px) {
+        gap: 16px;
+        width: 100%;
+      }
 
       a {
         color: #fff;
         font-size: 1.2rem;
         transition: transform 0.2s, color 0.2s;
 
+        @media (max-width: 768px) {
+          font-size: 1.1rem;
+        }
+
         &:hover {
           color: var(--primary-glow);
           transform: translateY(-2px);
+        }
+      }
+
+      .langRight {
+        @media (max-width: 768px) {
+          width: 100%;
+          margin-top: 8px;
+        }
+
+        .btnLang {
+          @media (max-width: 768px) {
+            width: 100%;
+            justify-content: center;
+            padding: 12px 20px;
+          }
         }
       }
     }

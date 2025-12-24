@@ -1,0 +1,149 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.processSection {
+  padding: 80px 20px 20px;
+  background: #fff;
+
+  @media (max-width: 1024px) {
+    padding: 60px 20px 20px;
+  }
+
+  .processHeader {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #FF6B00;
+      border: 1px solid rgba(255, 107, 0, 0.3);
+      padding: 6px 16px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+      background: rgba(255, 107, 0, 0.1);
+    }
+
+    h2 {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      font-weight: 400;
+      margin-bottom: 20px;
+      color: var(--text-dark);
+      line-height: 1.2;
+
+      @media (max-width: 768px) {
+        font-size: 1.75rem;
+      }
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+  }
+
+  .processSteps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .stepCard {
+      text-align: center;
+      position: relative;
+      padding: 30px 20px;
+
+      .stepNumber {
+        font-family: var(--font-heading);
+        font-size: 4rem;
+        font-weight: 300;
+        color: rgba(255, 107, 0, 0.1);
+        line-height: 1;
+        margin-bottom: 15px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 0;
+      }
+
+      .stepIcon {
+        position: relative;
+        z-index: 1;
+        width: 70px;
+        height: 70px;
+        background: rgba(255, 107, 0, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        color: #FF6B00;
+      }
+
+      h3 {
+        font-family: var(--font-heading);
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+        color: var(--text-dark);
+        position: relative;
+        z-index: 1;
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: var(--text-muted);
+        line-height: 1.6;
+        margin: 0;
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+
+  .timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 16px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .timelineItem {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.95rem;
+      color: var(--text-dark);
+      font-weight: 500;
+
+      svg {
+        color: #22c55e;
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+
