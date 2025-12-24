@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Icon from "../ui/Icon";
+import TrackedLink from "../ui/TrackedLink";
 import styles from "./Hero.module.scss";
 
 export default function Hero() {
@@ -27,12 +28,30 @@ export default function Hero() {
           Get more leads, more bookings, and more revenue with a website designed to convert.
         </p>
         <div className={styles.ctaGroup}>
-          <Link href="/contact" className="btn-primary button">
+          <TrackedLink 
+            href="/contact" 
+            className="btn-primary button"
+            eventName="cta_click"
+            eventParams={{ 
+              cta_location: "hero", 
+              cta_text: "Get Free Website Audit",
+              cta_type: "primary"
+            }}
+          >
             Get Free Website Audit
-          </Link>
-          <Link href="/portfolio" className="btn-glass button">
+          </TrackedLink>
+          <TrackedLink 
+            href="/portfolio" 
+            className="btn-glass button"
+            eventName="cta_click"
+            eventParams={{ 
+              cta_location: "hero", 
+              cta_text: "See Our Work",
+              cta_type: "secondary"
+            }}
+          >
             See Our Work
-          </Link>
+          </TrackedLink>
         </div>
         <div className={styles.trustSignal}>
           <div className={styles.avatars}>

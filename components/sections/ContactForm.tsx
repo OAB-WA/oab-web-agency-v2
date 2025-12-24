@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Icon from "../ui/Icon";
 import styles from "./ContactForm.module.scss";
+import { trackEvent } from "@/components/analytics/GoogleAnalytics";
 
 export default function ContactForm() {
   const router = useRouter();
@@ -40,6 +41,16 @@ export default function ContactForm() {
       const data = await response.json();
       
       if (response.ok) {
+        // Track conversion event in Google Analytics
+        trackEvent("form_submission", {
+          form_name: "contact_form",
+          form_location: "contact_page",
+          business_type: formData.businessType,
+          monthly_lead_goal: formData.monthlyLeadGoal,
+          event_category: "Lead Generation",
+          event_label: "Contact Form Submission",
+        });
+        
         // Redirect to thank you page
         router.push("/thank-you");
       } else {
@@ -122,13 +133,13 @@ export default function ContactForm() {
           </select>
         </div>
         <div className={styles.formGroup}>
-          <label>Preferred Contact Time</label>
+          <label>Preferred Contact Time <span style={{ fontSize: "0.85rem", fontWeight: "normal", color: "#666" }}>(Optional)</span></label>
           <select
             name="preferredContactTime"
             value={formData.preferredContactTime}
             onChange={handleChange}
           >
-            <option value="">Select preferred time</option>
+            <option value="">Select preferred time (optional)</option>
             <option value="morning-est">Morning (9 AM - 12 PM EST)</option>
             <option value="afternoon-est">Afternoon (12 PM - 5 PM EST)</option>
             <option value="evening-est">Evening (5 PM - 8 PM EST)</option>
@@ -136,13 +147,13 @@ export default function ContactForm() {
           </select>
         </div>
         <div className={styles.formGroup}>
-          <label>Monthly Lead Goal</label>
+          <label>Monthly Lead Goal <span style={{ fontSize: "0.85rem", fontWeight: "normal", color: "#666" }}>(Optional)</span></label>
           <select
             name="monthlyLeadGoal"
             value={formData.monthlyLeadGoal}
             onChange={handleChange}
           >
-            <option value="">Select your goal</option>
+            <option value="">Select your goal (optional)</option>
             <option value="10-20">10-20 leads per month</option>
             <option value="21-50">21-50 leads per month</option>
             <option value="51-100">51-100 leads per month</option>
@@ -189,12 +200,16 @@ export default function ContactForm() {
             Something went wrong. Please try again later.
           </div>
         )}
+        <div style={{ marginTop: "1.5rem", fontSize: "0.875rem", color: "#666", textAlign: "center" }}>
+          <Icon name="shield-halved" size={14} style={{ marginRight: "0.5rem", display: "inline" }} />
+          We respond within 24 hours • No spam, ever
+        </div>
         <button
           type="submit"
           className={`btn-primary button ${styles.submitButton}`}
           disabled={isSubmitting}
         >
-          {isSubmitting ? "Sending..." : "Send Message"}
+          {isSubmitting ? "Sending..." : "Get Free Website Audit"}
         </button>
       </form>
     </div>

@@ -2,6 +2,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ContactInfo from "@/components/sections/ContactInfo";
 import ContactForm from "@/components/sections/ContactForm";
+import TrustBadges from "@/components/sections/TrustBadges";
 import Partners from "@/components/sections/Partners";
 import Icon from "@/components/ui/Icon";
 import { getBreadcrumbSchema } from "@/lib/seo/structured-data";
@@ -50,6 +51,7 @@ export default function Contact() {
         </section>
         <div className={styles.contactSection}>
           <div className="container">
+            <TrustBadges />
             <div className={styles.contactWrapper}>
               <ContactInfo />
               <ContactForm />
