@@ -100,10 +100,30 @@
     color: #FF6B00; // $primary-glow
     line-height: 1;
     margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    svg {
+      width: 100%;
+      max-width: 120px;
+      height: auto;
+      display: block;
+    }
 
     @media (max-width: 1024px) {
       font-size: 4rem;
       margin-bottom: 24px;
+
+      svg {
+        max-width: 100px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      svg {
+        max-width: 80px;
+      }
     }
   }
 

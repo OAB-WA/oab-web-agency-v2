@@ -20,10 +20,10 @@ export default function Portfolio({ showHeader = true }: PortfolioProps) {
             <span className={styles.label}>
               <Icon name="file" size={14} /> Our Work
             </span>
-            <h2>Real Results for Service Businesses</h2>
+            <h2>Our Portfolio</h2>
             <p className={styles.desc}>
-              See how we've helped service businesses across the USA increase their leads, 
-              bookings, and revenue. These are real numbers from real businesses.
+              Explore examples of our work for service businesses across the USA. 
+              Each project is designed to convert visitors into customers.
             </p>
           </div>
         )}

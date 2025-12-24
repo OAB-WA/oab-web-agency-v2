@@ -2,6 +2,8 @@ import Link from "next/link";
 import Logo from "../ui/Logo";
 import Icon from "../ui/Icon";
 import styles from "./Footer.module.scss";
+import Image from "next/image";
+import siteConfig from "@/lib/data/site-config.json";
 
 export default function Footer() {
   return (
@@ -9,9 +11,15 @@ export default function Footer() {
       <div className={styles.footerCard}>
         <div className={styles.footerLinks}>
           <div className={styles.col}>
-            <h4>
-              <Logo variant="light" />
-            </h4>
+          <Link href="/">
+          <Image
+            src="/images/logo_dark.webp"
+            alt="OAB Web Agency"
+            width={160}
+            height={80}
+            priority
+          />
+        </Link>
             <p>
               We build high-converting websites for service businesses across the United States. 
               Our focus is on helping you get more leads, more bookings, and more revenue.
@@ -73,18 +81,21 @@ export default function Footer() {
             &copy; 2025 OAB Web Agency. All rights reserved. Serving service businesses across the United States.
           </div>
           <div className={styles.socialIcons}>
-            <a href="#" aria-label="Twitter">
+            <a href={siteConfig.site.social.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter">
               <Icon name="x-twitter" size={20} />
             </a>
-            <a href="#" aria-label="Discord">
-              <Icon name="discord" size={20} />
+            <a href={siteConfig.site.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <Icon name="instagram" size={20} />
             </a>
-            <a href="#" aria-label="LinkedIn">
+            {/* <a href={`https://linkedin.com/company/${siteConfig.site.social.linkedin}`} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <Icon name="linkedin" size={20} />
             </a>
-            <a href="#" aria-label="GitHub">
+            <a href={`https://github.com/${siteConfig.site.social.github}`} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <Icon name="github" size={20} />
             </a>
+            <a href={`https://discord.com/users/${siteConfig.site.social.discord}`} target="_blank" rel="noopener noreferrer" aria-label="Discord">
+              <Icon name="discord" size={20} />
+            </a> */}
 
             <div className={styles.langRight}>
               <button className={styles.btnLang}>

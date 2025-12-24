@@ -5,7 +5,8 @@
     "description": "OAB Web Agency builds high-converting websites for service-based businesses across the United States. We specialize in lead generation, conversion optimization, and local SEO to help service businesses grow their online presence and revenue.",
     "url": "https://oabwebagency.com",
     "social": {
-      "twitter": "@oabwebagency",
+      "twitter": "https://x.com/oab_web_agency",
+      "instagram": "https://www.instagram.com/oabwebagency/",
       "linkedin": "oab-web-agency",
       "github": "oabwebagency",
       "discord": "oabwebagency"

@@ -84,8 +84,10 @@ a {
   border: none;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   text-decoration: none;
+  text-align: center;
 }
 
 .btn-primary {

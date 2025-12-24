@@ -39,6 +39,7 @@ import {
   FaStackOverflow,
   FaLinkedin,
   FaDiscord,
+  FaInstagram,
 } from "react-icons/fa6";
 
 type IconName =
@@ -81,7 +82,8 @@ type IconName =
   | "stack-overflow"
   | "linkedin"
   | "discord"
-  | "comment-dots";
+  | "comment-dots"
+  | "instagram";
 
 interface IconProps {
   name: IconName;
@@ -130,6 +132,7 @@ const iconMap: Record<IconName, React.ComponentType<{ className?: string; size?:
   linkedin: FaLinkedin,
   discord: FaDiscord,
   "comment-dots": FaCommentDots,
+  instagram: FaInstagram,
 };
 
 export default function Icon({ name, className = "", size }: IconProps) {

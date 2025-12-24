@@ -113,9 +113,9 @@ export default function About() {
                 </div>
                 <h3>Proven Track Record</h3>
                 <p>
-                  We've helped over 150 service businesses across the USA increase their 
-                  leads and revenue. Our clients see an average 3x increase in qualified 
-                  leads within 90 days.
+                  We help service businesses across the USA increase their 
+                  leads and revenue. Our websites are designed to attract more qualified 
+                  leads and drive measurable growth for your business.
                 </p>
               </div>
               <div className={styles.whyCard}>

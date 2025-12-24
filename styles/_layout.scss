@@ -11,6 +11,11 @@
   border-radius: 50px;
   transition: 0.3s ease;
   border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
 }
 
 .btn-primary {

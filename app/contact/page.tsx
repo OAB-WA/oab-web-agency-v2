@@ -51,7 +51,7 @@ export default function Contact() {
         </section>
         <div className={styles.contactSection}>
           <div className="container">
-            <TrustBadges />
+            {/* <TrustBadges /> */}
             <div className={styles.contactWrapper}>
               <ContactInfo />
               <ContactForm />

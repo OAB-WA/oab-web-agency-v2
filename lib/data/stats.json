@@ -1,14 +1,16 @@
 {
   "stats": [
     {
-      "number": "3x",
-      "label": "Average Lead Increase",
-      "text": "Our USA clients see an average 3x increase in qualified leads within the first 90 days after launch."
+      "number": "",
+      "icon": "arrow-trend-up",
+      "label": "Lead Growth",
+      "text": "Our websites are designed to help service businesses attract more qualified leads and grow their customer base."
     },
     {
-      "number": "150+",
-      "label": "USA Service Businesses Served",
-      "text": "We've helped over 150 service-based businesses across the United States grow their online presence and revenue."
+      "number": "",
+      "icon": "check",
+      "label": "Service Businesses",
+      "text": "We specialize in building high-converting websites for service-based businesses across the United States."
     },
     {
       "number": "24hrs",

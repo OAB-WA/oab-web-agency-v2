@@ -19,7 +19,8 @@ export function getOrganizationSchema(): StructuredData {
       name: "United States",
     },
     sameAs: [
-      `https://twitter.com/${siteConfig.site.social.twitter}`,
+      siteConfig.site.social.twitter,
+      siteConfig.site.social.instagram,
       `https://linkedin.com/company/${siteConfig.site.social.linkedin}`,
       `https://github.com/${siteConfig.site.social.github}`,
     ],

@@ -78,6 +78,7 @@ export interface Testimonial {
 
 export interface Stat {
   number: string;
+  icon?: string;
   label: string;
   text: string;
 }

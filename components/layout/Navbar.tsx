@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
-import Logo from "../ui/Logo";
 import Icon from "../ui/Icon";
 import styles from "./Navbar.module.scss";
 
@@ -34,8 +34,16 @@ export default function Navbar() {
 
   return (
     <nav className={`${styles.navbar} ${isMenuOpen ? styles.active : ""}`}>
-      <div className={styles.logo}>
-        <Logo variant="light" />
+      <div>
+        <Link href="/">
+          <Image
+            src="/images/logo_dark.webp"
+            alt="OAB Web Agency"
+            width={120}
+            height={60}
+            priority
+          />
+        </Link>
       </div>
 
       <div className={styles.hamburger} onClick={toggleMenu}>

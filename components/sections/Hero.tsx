@@ -54,30 +54,8 @@ export default function Hero() {
           </TrackedLink>
         </div>
         <div className={styles.trustSignal}>
-          <div className={styles.avatars}>
-            <Image
-              src="/images/avatar.jpg"
-              width={32}
-              height={32}
-              alt="User"
-              className={styles.avatar}
-            />
-            <Image
-              src="/images/avatar.jpg"
-              width={32}
-              height={32}
-              alt="User"
-              className={styles.avatar}
-            />
-            <Image
-              src="/images/avatar.jpg"
-              width={32}
-              height={32}
-              alt="User"
-              className={styles.avatar}
-            />
-          </div>
-          <span>Trusted by 150+ service businesses across the USA</span>
+          <Icon name="users" size={20} />
+          <span>Trusted by service businesses across the USA</span>
         </div>
       </div>
 
@@ -210,7 +188,7 @@ export default function Hero() {
 
           {/* FLOATING WIDGET 2 (Right) */}
           <div className={`${styles.floatWidget} ${styles.widgetUsers}`}>
-            <div className={styles.userStack}>
+            {/* <div className={styles.userStack}>
               <Image
                 src="/images/avatar.jpg"
                 width={30}
@@ -232,7 +210,8 @@ export default function Hero() {
                 alt="U3"
                 className={styles.userImg}
               />
-            </div>
+            </div> */}
+            <Icon name="users" size={20} />
             <div className={styles.text}>
               <strong>New Clients</strong>
               <span className={styles.caption}>Just joined</span>

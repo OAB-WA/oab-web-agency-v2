@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Icon from "../ui/Icon";
 import styles from "./Testimonials.module.scss";
 import testimonialsData from "@/lib/data/testimonials.json";
@@ -29,13 +28,6 @@ export default function Testimonials() {
           {[...testimonialsRow1, ...testimonialsRow1].map((testimonial, idx) => (
             <div key={`row1-${idx}`} className={styles.testiCard}>
               <div className={styles.cardTop}>
-                <Image
-                  src={testimonial.image}
-                  width={48}
-                  height={48}
-                  alt={testimonial.name}
-                  className={styles.avatar}
-                />
                 <div className={styles.userInfo}>
                   <strong>{testimonial.name}</strong>
                   <span>{testimonial.role}{testimonial.location ? ` • ${testimonial.location}` : ""}</span>
@@ -51,13 +43,6 @@ export default function Testimonials() {
           {[...testimonialsRow2, ...testimonialsRow2].map((testimonial, idx) => (
             <div key={`row2-${idx}`} className={styles.testiCard}>
               <div className={styles.cardTop}>
-                <Image
-                  src={testimonial.image}
-                  width={48}
-                  height={48}
-                  alt={testimonial.name}
-                  className={styles.avatar}
-                />
                 <div className={styles.userInfo}>
                   <strong>{testimonial.name}</strong>
                   <span>{testimonial.role}{testimonial.location ? ` • ${testimonial.location}` : ""}</span>
