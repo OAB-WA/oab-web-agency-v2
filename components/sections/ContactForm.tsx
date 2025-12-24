@@ -201,7 +201,9 @@ export default function ContactForm() {
           </div>
         )}
         <div style={{ marginTop: "1.5rem", fontSize: "0.875rem", color: "#666", textAlign: "center" }}>
-          <Icon name="shield-halved" size={14} style={{ marginRight: "0.5rem", display: "inline" }} />
+          <span style={{ marginRight: "0.5rem", display: "inline-flex", verticalAlign: "middle" }}>
+            <Icon name="shield-halved" size={14} />
+          </span>
           We respond within 24 hours • No spam, ever
         </div>
         <button
