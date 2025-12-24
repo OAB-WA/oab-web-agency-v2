@@ -103,7 +103,7 @@ export default function PrivacyPage() {
               <p>
                 If you have questions about this Privacy Policy or wish to exercise your rights, 
                 please contact us at{" "}
-                <a href={`mailto:${siteConfig.site.social.email || "hello@oabwebagency.com"}`}>
+                <a href="mailto:hello@oabwebagency.com">
                   hello@oabwebagency.com
                 </a>
               </p>
