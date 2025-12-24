@@ -14,7 +14,6 @@ export default function ContactForm() {
     phone: "",
     businessType: "",
     preferredContactTime: "",
-    monthlyLeadGoal: "",
     currentWebsite: "",
     message: "",
     honeypot: "", // Spam protection
@@ -46,7 +45,6 @@ export default function ContactForm() {
           form_name: "contact_form",
           form_location: "contact_page",
           business_type: formData.businessType,
-          monthly_lead_goal: formData.monthlyLeadGoal,
           event_category: "Lead Generation",
           event_label: "Contact Form Submission",
         });
@@ -144,20 +142,6 @@ export default function ContactForm() {
             <option value="afternoon-est">Afternoon (12 PM - 5 PM EST)</option>
             <option value="evening-est">Evening (5 PM - 8 PM EST)</option>
             <option value="flexible">Flexible</option>
-          </select>
-        </div>
-        <div className={styles.formGroup}>
-          <label>Monthly Lead Goal <span style={{ fontSize: "0.85rem", fontWeight: "normal", color: "#666" }}>(Optional)</span></label>
-          <select
-            name="monthlyLeadGoal"
-            value={formData.monthlyLeadGoal}
-            onChange={handleChange}
-          >
-            <option value="">Select your goal (optional)</option>
-            <option value="10-20">10-20 leads per month</option>
-            <option value="21-50">21-50 leads per month</option>
-            <option value="51-100">51-100 leads per month</option>
-            <option value="100+">100+ leads per month</option>
           </select>
         </div>
         <div className={styles.formGroup}>

@@ -51,7 +51,6 @@ export async function POST(request: NextRequest) {
       phone, 
       businessType, 
       preferredContactTime, 
-      monthlyLeadGoal, 
       currentWebsite, 
       message, 
       honeypot 
@@ -94,7 +93,6 @@ export async function POST(request: NextRequest) {
     const sanitizedPhone = sanitizeInput(phone);
     const sanitizedBusinessType = sanitizeInput(businessType);
     const sanitizedPreferredContactTime = preferredContactTime ? sanitizeInput(preferredContactTime) : "";
-    const sanitizedMonthlyLeadGoal = monthlyLeadGoal ? sanitizeInput(monthlyLeadGoal) : "";
     const sanitizedCurrentWebsite = currentWebsite ? sanitizeInput(currentWebsite) : "";
     const sanitizedMessage = message ? sanitizeInput(message) : "";
 
@@ -155,12 +153,6 @@ export async function POST(request: NextRequest) {
                   <div class="value">${sanitizedPreferredContactTime}</div>
                 </div>
                 ` : ""}
-                ${sanitizedMonthlyLeadGoal ? `
-                <div class="field">
-                  <div class="label">Monthly Lead Goal:</div>
-                  <div class="value">${sanitizedMonthlyLeadGoal}</div>
-                </div>
-                ` : ""}
                 ${sanitizedCurrentWebsite ? `
                 <div class="field">
                   <div class="label">Current Website:</div>
@@ -190,7 +182,6 @@ Email: ${sanitizedEmail}
 Phone: ${sanitizedPhone}
 Business Type: ${sanitizedBusinessType}
 ${sanitizedPreferredContactTime ? `Preferred Contact Time: ${sanitizedPreferredContactTime}` : ""}
-${sanitizedMonthlyLeadGoal ? `Monthly Lead Goal: ${sanitizedMonthlyLeadGoal}` : ""}
 ${sanitizedCurrentWebsite ? `Current Website: ${sanitizedCurrentWebsite}` : ""}
 ${sanitizedMessage ? `Message: ${sanitizedMessage}` : ""}
 
