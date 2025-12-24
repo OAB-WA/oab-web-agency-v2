@@ -121,7 +121,7 @@ export default function TermsPage() {
               <h2>Contact</h2>
               <p>
                 If you have questions about these terms, please contact us at{" "}
-                <a href={`mailto:${siteConfig.site.social.email || "hello@oabwebagency.com"}`}>
+                <a href="mailto:hello@oabwebagency.com">
                   hello@oabwebagency.com
                 </a>
               </p>
